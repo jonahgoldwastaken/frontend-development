@@ -1,16 +1,14 @@
 # Procesverslag
-**Auteur:** -jouw naam-
+
+**Auteur:** Jonah Meijers
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
-
-
 ## Bronnenlijst
+
 1. -bron 1-
 2. -bron 2-
 3. -...-
-
-
 
 ## Eindgesprek (week 7/8)
 
@@ -20,19 +18,13 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -screenshot(s) van je eindresultaat-
 
-
-
 ## Voortgang 3 (week 6)
 
 -same as voortgang 1-
 
-
-
 ## Voortgang 2 (week 5)
 
 -same as voortgang 1-
-
-
 
 ## Voortgang 1 (week 3)
 
@@ -58,22 +50,17 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -na afloop snel uitkomsten vastleggen-
 
-
-
 ## Breakdownschets (week 1)
 
 -uitwerken voor de 1e werkgroep - eind van de eerste week-
 
-
-
 ## Intake (week 1)
--uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
-**Je startniveau:** -kies uit zwart, rood óf blauw-
+**Je startniveau:** Zwart
 
-**Je focus:** -kies uit responsive óf surface plane-
+**Je focus:** Surface Plane
 
-**Je opdracht:** -link naar de website die je gaat namaken óf de naam van je eigen ontwerp-
+**Je opdracht:** https://vercel.com
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
