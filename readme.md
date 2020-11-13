@@ -62,10 +62,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je opdracht:** https://vercel.com
 
-**Screenshot(s) van de eerste pagina (small screen):**
+**Screenshot van de eerste pagina (small screen):**
 
-<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
+![Screenshot home-pagina](images/home_page.png)
+> Home-pagina
 
-**Screenshot(s) van de tweede pagina (small screen):**
+**Screenshot van de tweede pagina (small screen):**
 
-<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
+![Screenshot pricing-pagina](images/pricing_page.png)
+> Pricing-pagina
