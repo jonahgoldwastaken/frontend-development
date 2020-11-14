@@ -52,7 +52,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Breakdownschets (week 1)
 
--uitwerken voor de 1e werkgroep - eind van de eerste week-
+![Breakdownschets home-pagina](images/home_page_breakdown.png)
+> Breakdown home-pagina
+
+![Breakdownschets pricing-pagina](images/pricing_page_breakdown.png)
+> Breakdown pricing-pagina
 
 ## Intake (week 1)
 
