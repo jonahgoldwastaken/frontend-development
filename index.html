@@ -12,7 +12,7 @@
 <body>
   <header>
     <aside>
-      <a>
+      <a href="https://nextjs.org/blog/next-10">
         Next.js 10 <span>Read →</span>
       </a>
     </aside>
@@ -27,46 +27,48 @@
     <button>Open menu</button>
     <nav>
       <ul>
-        <li><a>Contact</a></li>
-        <li><a>Login</a></li>
-        <li><a>Sign up</a></li>
+        <li><a href="https://vercel.com/contact">Contact</a></li>
+        <li><a href="https://vercel.com/login">Login</a></li>
+        <li><a href="https://vercel.com/signup">Sign up</a></li>
       </ul>
       <h2>Solutions</h2>
       <ul>
-        <li><a>Next.js</a></li>
-        <li><a>Gatsby</a></li>
-        <li><a>React</a></li>
-        <li><a>Vue</a></li>
-        <li><a>Nuxt</a></li>
-        <li><a>Angular</a></li>
-        <li><a>Custom</a></li>
+        <li><a href="https://vercel.com/solutions/nextjs">Next.js</a></li>
+        <li><a href="https://vercel.com/solutions/gatsby">Gatsby</a></li>
+        <li><a href="https://vercel.com/solutions/react">React</a></li>
+        <li><a href="https://vercel.com/solutions/vue">Vue</a></li>
+        <li><a href="https://vercel.com/solutions/nuxt-static">Nuxt</a></li>
+        <li><a href="https://vercel.com/solutions/angular">Angular</a></li>
+        <li><a href="https://vercel.com/docs/v2/build-step">Custom</a></li>
       </ul>
       <h2>Resources</h2>
       <ul>
-        <li><a>Documentation</a></li>
-        <li><a>Knowledge</a></li>
-        <li><a>Guides</a></li>
-        <li><a>Blog</a></li>
-        <li><a>API Reference</a></li>
-        <li><a>Command-Line</a></li>
+        <li><a href="https://vercel.com/docs">Documentation</a></li>
+        <li><a href="https://vercel.com/knowledge">Knowledge</a></li>
+        <li><a href="https://vercel.com/guides">Guides</a></li>
+        <li><a href="https://vercel.com/blog">Blog</a></li>
+        <li><a href="https://vercel.com/api">API Reference</a></li>
+        <li><a href="https://vercel.com/download">Command-Line</a></li>
       </ul>
       <h2>More</h2>
       <ul>
-        <li><a>Home</a></li>
-        <li><a>Blog</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://vercel.com/blog">Blog</a></li>
         <li><a href="pricing.html">Pricing</a></li>
-        <li><a>Support</a></li>
-        <li><a>About</a></li>
-        <li><a>Careers</a></li>
+        <li><a href="https://vercel.com/support">Support</a></li>
+        <li><a href="https://vercel.com/about">About</a></li>
+        <li><a href="https://vercel.com/careers">Careers</a></li>
       </ul>
-      <h2>Theme</h2>
-      <select>
-        <option value="system">System</option>
-        <option value="light">Light</option>
-        <option value="Dark">Dark</option>
-      </select>
+      <label>Theme
+        <select aria-labelledby="theme-label">
+          <option value="system">System</option>
+          <option value="light">Light</option>
+          <option value="Dark">Dark</option>
+        </select>
+      </label>
     </nav>
   </header>
+
   <main>
     <section>
       <h2>Develop. Preview. Ship</h2>
@@ -82,12 +84,19 @@
           <h3>1. Develop</h3>
           <h4>Start with the developer</h4>
         </hgroup>
-        <p>Developers love Next.js, the open source React framework Vercel built together with Google and Facebook.
-          Next.js powers the biggest websites like Airbnb and Twilio, for use cases in e-commerce, travel, news, and
-          marketing.</p>
-        <p>Vercel is the best place to deploy any frontend app. Start by deploying with zero configuration to our global
-          edge network. Scale dynamically to millions of pages without breaking a sweat.</p>
-
+        <p>Developers love <a href="https://vercel.com/solutions/nextjs">Next.js</a>, the open source React framework
+          Vercel built together with Google and Facebook.
+          Next.js powers the biggest websites like <a href="https://airbnb.com" rel="noopener noreferrer"
+            target="_blank">Airbnb</a> and <a href="https://twilio.com" rel="noopener noreferrer"
+            target="_blank">Twilio</a>, for use cases in <a target="_blank"
+            href="https://nextjs.org/showcase#e-commerce">e-commerce</a>, <a target="_blank"
+            href="https://nextjs.org/showcase#travel">travel</a>, <a target="_blank"
+            href="https://nextjs.org/showcase#news">news</a>, and
+          <a target="_blank" href="https://nextjs.org/showcase#marketing">marketing</a>.</p>
+        <p>Vercel is the best place to deploy any frontend app. Start by deploying with zero configuration to our <a
+            target="_blank" href="https://vercel.com/docs/v2/edge-network/overview">global
+            edge network</a>. <a target="_blank" href="https://nextjs.org/docs/basic-features/data-fetching">Scale
+            dynamically</a> to millions of pages without breaking a sweat.</p>
         <h5>Fast Refresh</h5>
         <p>Reliable live-editing experience for your UI components.</p>
         <h5>Flexible Data Fetching</h5>
@@ -114,10 +123,13 @@
           <h4>Accelerate with your team</h4>
         </hgroup>
         <p>Frontend development is not meant to be a solo activity. The Vercel platform makes it a collaborative
-          experience with deploy previews for every code change, by seamlessly integrating with GitHub, GitLab, and
-          Bitbucket.</p>
+          experience with deploy previews for every code change, by seamlessly integrating with <a target="_blank"
+            href="https://vercel.com/github">GitHub</a>, <a target="_blank" href="https://vercel.com/gitlab">GitLab</a>,
+          and
+          <a target="_blank" href="https://vercel.com/bitbucket">Bitbucket</a>.</p>
         <h5>Push to deploy</h5>
-        <p>Import your repo with one click, then push. Our built-in CI/CD system triggers for every code change.</p>
+        <p><a target="_blank" href="https://vercel.com/import">Import your repo</a> with one click, then push. Our
+          built-in CI/CD system triggers for every code change.</p>
         <h5>Get your preview URL</h5>
         <p>Every Git branch and PR receives a live, production-like URL that everyone on your team can visit.</p>
         <h5>Share and Collaborate</h5>
@@ -129,14 +141,20 @@
           <h3>3. Ship</h3>
           <h4>Delight every visitor</h4>
         </hgroup>
-          <p>Merged changes instantly go live on our global edge network, putting your content as close as possible to
-            your customers. Everything is taken care of for you, from SSL encryption to asset compression and cache
-            invalidation.</p>
-          <p>Speed is critical to customers - and for SEO. Vercel goes beyond just caching static content, scaling to
-            millions of pages through dynamic code execution.</p>
+        <p>Merged changes instantly go live on our <a target="_blank"
+            href="https://vercel.com/docs/v2/edge-network/overview">global edge network</a>, putting your content as
+          close as possible to
+          your customers. Everything is taken care of for you, from <a target="_blank"
+            href="https://vercel.com/blog/automatic-ssl-with-vercel-lets-encrypt">SSL encryption</a> to <a
+            target="_blank" href="https://vercel.com/docs/v2/edge-network/compression">asset compression</a> and <a
+            target="_blank" href="https://vercel.com/docs/v2/edge-network/caching">cache
+            invalidation</a>.</p>
+        <p>Speed is critical to customers - and for SEO. Vercel goes beyond just caching static content, scaling to
+          <a target="_blank" href="https://nextjs.org/docs/basic-features/data-fetching">millions of pages</a> through
+          <a target="_blank" href="https://vercel.com/docs/v2/serverless-functions/introduction">dynamic code
+            execution</a>.</p>
       </section>
     </article>
-
     <aside>
       <ol>
         <li>70 cities</li>
@@ -145,15 +163,16 @@
         <li>99.99% guaranteed uptime</li>
       </ol>
     </aside>
-    
     <section>
       <h2>Begin your vercel journey</h2>
       <section>
         <h3>Import Existing Project</h3>
-        <p>Already have a Next.js, Gatsby, Nuxt, or Jamstack project?</p>
-        <a>Continue with GitHub</a>
-        <a>Continue with GitLab</a>
-        <a>Continue with Bitbucket</a>
+        <p>Already have a <a target="_blank" href="https://nextjs.org/">Next.js</a>, <a target="_blank"
+            href="https://vercel.com/solutions/gatsby">Gatsby</a>, <a target="_blank"
+            href="https://vercel.com/guides/deploying-nuxtjs-with-vercel">Nuxt</a>, or Jamstack project?</p>
+        <button>Continue with GitHub</button>
+        <button>Continue with GitLab</button>
+        <button>Continue with Bitbucket</button>
         <p>No source code access will be granted. By authenticating, you agree to our Terms of Service and Privacy
           Policy.</p>
       </section>
@@ -161,12 +180,26 @@
         <h3>Clone example</h3>
         <p>You can use an example as a free template for your project.</p>
         <ul>
-          <li>Next.js</li>
-          <li>Gatsby</li>
-          <li>Create React App</li>
-          <li>Nuxt.js</li>
+          <li><a target="_blank"
+              href="https://vercel.com/signup?next=%2Fimport%2Fselect-scope%3Fs%3Dhttps%253A%252F%252Fgithub.com%252Fvercel%252Fvercel%252Ftree%252Fmaster%252Fexamples%252Fnextjs%26template%3Dnextjs%26id%3D67753070"><img
+                src="blob:https://vercel.com/d13b7fd8-313d-4a22-bd9a-d5d6f3f797af"
+                alt="Preview Screenshot of nextjs-2777hgn6x.now.sh" /> Next.js</a></li>
+          <li><a target="_blank"
+              href="https://vercel.com/signup?next=%2Fimport%2Fselect-scope%3Fs%3Dhttps%253A%252F%252Fgithub.com%252Fvercel%252Fvercel%252Ftree%252Fmaster%252Fexamples%252Fgatsby%26template%3Dgatsby%26id%3D67753070"><img
+                src="blob:https://vercel.com/88b63664-593d-4e4b-a76d-a800b2812a58"
+                alt="Preview Screenshot of gatsby-25s27buka.now.sh" />Gatsby</a></li>
+          <li><a
+              href="https://vercel.com/signup?next=%2Fimport%2Fselect-scope%3Fs%3Dhttps%253A%252F%252Fgithub.com%252Fvercel%252Fvercel%252Ftree%252Fmaster%252Fexamples%252Fcreate-react-app%26template%3Dcreate-react-app%26id%3D67753070"><img
+                src="blob:https://vercel.com/ccb18f8c-0068-4e65-82f9-1c9ef65e04d8"
+                alt="Preview Screenshot of react-functions-bnif26ysg.now.sh" />Create React App</a></li>
+          <li>
+            <a target="_blank"
+              href="https://vercel.com/signup?next=%2Fimport%2Fselect-scope%3Fs%3Dhttps%253A%252F%252Fgithub.com%252Fvercel%252Fvercel%252Ftree%252Fmaster%252Fexamples%252Fnuxtjs%26template%3Dnuxtjs%26id%3D67753070"><img
+                src="blob:https://vercel.com/50289732-e62f-4c9c-b905-ef1cdf46f8fb"
+                alt="Preview Screenshot of nuxtjs-o3teea4hs.now.sh" /> Nuxt.js</a>
+          </li>
         </ul>
-        <a>Browse All Examples</a>
+        <a target="_blank" href="https://vercel.com/import/templates">Browse All Examples</a>
       </section>
     </section>
     <section>
@@ -186,50 +219,47 @@
       <details>
         <summary>Product</summary>
         <ul>
-          <li><a>Next.js</a></li>
-          <li><a>Vercel for GitHub</a></li>
-          <li><a>Vercel for GitLab</a></li>
-          <li><a>Vercel for Bitbucket</a></li>
-          <li><a>Integrations</a></li>
-          <li><a>Command-Line</a></li>
-          <li><a>Edge Network</a></li>
+          <li><a href="https://vercel.com/solutions/nextjs">Next.js</a></li>
+          <li><a href="https://vercel.com/github">Vercel for GitHub</a></li>
+          <li><a href="https://vercel.com/gitlab">Vercel for GitLab</a></li>
+          <li><a href="https://vercel.com/bitbucket">Vercel for Bitbucket</a></li>
+          <li><a href="https://vercel.com/integrations">Integrations</a></li>
+          <li><a href="https://vercel.com/download">Command-Line</a></li>
+          <li><a href="https://vercel.com/docs/v2/edge-network/overview">Edge Network</a></li>
         </ul>
       </details>
       <details>
         <summary>Resources</summary>
         <ul>
-          <li><a>Documentation</a></li>
-          <li><a>Guides</a></li>
-          <li><a>Knowledge</a></li>
-          <li><a>Blog</a></li>
-          <li><a>API Reference</a></li>
-          <li><a>Examples</a></li>
-          <li><a>OSS</a></li>
-          <li><a>Partners</a></li>
-          <li><a>Support</a></li>
+          <li><a href="https://vercel.com/docs">Documentation</a></li>
+          <li><a href="https://vercel.com/knowledge">Knowledge</a></li>
+          <li><a href="https://vercel.com/guides">Guides</a></li>
+          <li><a href="https://vercel.com/blog">Blog</a></li>
+          <li><a href="https://vercel.com/api">API Reference</a></li>
+          <li><a href="https://vercel.com/download">Command-Line</a></li>
         </ul>
       </details>
       <details>
         <summary>Company</summary>
         <ul>
-          <li><a>Home</a></li>
-          <li><a>About</a></li>
-          <li><a>Careers</a></li>
-          <li><a>Pricing</a></li>
-          <li><a>Security</a></li>
-          <li><a>backendlessConf_</a></li>
-          <li><a>Contact Us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="https://vercel.com/about">About</a></li>
+          <li><a href="https://vercel.com/careers">Careers</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="https://vercel.com/security">Security</a></li>
+          <li><a href="https://backendlessconf.com/">backendlessConf_</a></li>
+          <li><a href="https://vercel.com/contact">Contact Us</a></li>
         </ul>
       </details>
       <details>
         <summary>Legal</summary>
         <ul>
-          <li><a>Privacy Policy</a></li>
-          <li><a>Terms of Service</a></li>
-          <li><a>Trademark Policy</a></li>
-          <li><a>Inactivity Policy</a></li>
-          <li><a>DPA</a></li>
-          <li><a>SLA</a></li>
+          <li><a href="https://vercel.com/legal/privacy-policy">Privacy Policy</a></li>
+          <li><a href="https://vercel.com/legal/terms">Terms of Service</a></li>
+          <li><a href="https://vercel.com/legal/trademark-policy">Trademark Policy</a></li>
+          <li><a href="https://vercel.com/legal/inactivity-policy">Inactivity Policy</a></li>
+          <li><a href="https://vercel.com/legal/dpa">DPA</a></li>
+          <li><a href="https://vercel.com/legal/sla">SLA</a></li>
         </ul>
       </details>
     </nav>
@@ -243,8 +273,8 @@
         <a>Status: All systems normal.</a>
       </small>
     </p>
-    <a>GitHub</a>
-    <a>Twitter</a>
+    <a target="_blank" href="https://github.com/vercel">GitHub</a>
+    <a target="_blank" href="https://twitter.com/vercel">Twitter</a>
     <p><small>Copyright © 2020 Vercel Inc. All rights reserved.</small></p>
   </footer>
   <script src="scripts/script.js"></script>
