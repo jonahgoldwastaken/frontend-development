@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="container">
     <aside>
       <a href="https://nextjs.org/blog/next-10">
         Next.js 10 <span>Read →</span>
@@ -27,9 +27,10 @@
     <button>Open menu</button>
     <nav>
       <ul>
-        <li><a class="button button--blue" href="https://vercel.com/contact">Contact</a></li>
-        <li><a class="button" href="https://vercel.com/login">Login</a></li>
-        <li><a class="button button--black" href="https://vercel.com/signup">Sign up</a></li>
+        <li class="li--button"><a class="button button--small" href="https://vercel.com/contact">Contact</a></li>
+        <li class="li--button"><a class="button button--small" href="https://vercel.com/login">Login</a></li>
+        <li class="li--button"><a class="button button--small button--blue" href="https://vercel.com/signup">Sign
+            up</a></li>
       </ul>
       <h2>Solutions</h2>
       <ul>
@@ -59,22 +60,23 @@
         <li><a href="https://vercel.com/about">About</a></li>
         <li><a href="https://vercel.com/careers">Careers</a></li>
       </ul>
-      <label>Theme
-        <select aria-labelledby="theme-label">
-          <option value="system">System</option>
-          <option value="light">Light</option>
-          <option value="Dark">Dark</option>
-        </select>
+      <label for="theme" class="h6">Theme
       </label>
+      <select id="theme" aria-labelledby="theme-label">
+        <option value="system">System</option>
+        <option value="light">Light</option>
+        <option value="Dark">Dark</option>
+      </select>
     </nav>
   </header>
 
-  <main>
+  <main class="container">
     <section>
       <h2>Develop. Preview. Ship</h2>
       <a class="button">Start Deploying</a>
       <a class="button button--black">Get a Demo</a>
-      <p>Vercel combines the best developer experience with an obsessive focus on end-user performance. Our platform
+      <p class="text--large">Vercel combines the best developer experience with an obsessive focus on end-user
+        performance. Our platform
         enables frontend teams to do their best work.</p>
     </section>
     <article>
@@ -213,7 +215,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="container">
     <nav>
       <details>
         <summary>Product</summary>
