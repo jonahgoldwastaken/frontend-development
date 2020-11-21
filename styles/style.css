@@ -355,16 +355,18 @@ header.sticking {
 }
 
 header > h1 {
+  position: relative;
   grid-area: heading;
   align-self: center;
   justify-self: start;
 }
 
-header > h1 #company-name {
+header > h1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: block;
   color: transparent;
-  width: 0px;
-  height: 0px;
   overflow: hidden;
 }
 
