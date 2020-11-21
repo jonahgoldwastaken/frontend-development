@@ -57,7 +57,7 @@
       </ul>
       <label for="theme" class="h6">Theme
       </label>
-      <select id="theme" aria-labelledby="theme-label">
+      <select id="theme">
         <option value="system">System</option>
         <option value="light">Light</option>
         <option value="Dark">Dark</option>
@@ -68,11 +68,9 @@
   <main class="container">
     <section>
       <h2>Develop. Preview. Ship</h2>
-      <a class="button">Start Deploying</a>
-      <a class="button button--black">Get a Demo</a>
-      <p class="text--large">Vercel combines the best developer experience with an obsessive focus on end-user
-        performance. Our platform
-        enables frontend teams to do their best work.</p>
+      <a class="button button--black">Start Deploying</a>
+      <a class="button">Get a Demo</a>
+      <p class="text--large text--centre">Vercel combines the best developer experience with an obsessive focus on end-user performance. Our platform enables frontend teams to do their best work.</p>
     </section>
     <article>
       <h2>Explore the vercel way</h2>
@@ -164,16 +162,25 @@
     </aside>
     <section>
       <h2>Begin your vercel journey</h2>
-      <section>
-        <h3>Import Existing Project</h3>
-        <p>Already have a <a target="_blank" href="https://nextjs.org/">Next.js</a>, <a target="_blank"
+      <section class="card">
+        <h3 class="card__heading">Import Existing Project</h3>
+        <p class="card__sub-heading">Already have a <a target="_blank" href="https://nextjs.org/">Next.js</a>, <a target="_blank"
             href="https://vercel.com/solutions/gatsby">Gatsby</a>, <a target="_blank"
             href="https://vercel.com/guides/deploying-nuxtjs-with-vercel">Nuxt</a>, or Jamstack project?</p>
-        <button class="button button--github">Continue with GitHub</button>
-        <button class="button button--gitlab">Continue with GitLab</button>
-        <button class="button button--bitbucket">Continue with Bitbucket</button>
-        <p>No source code access will be granted. By authenticating, you agree to our Terms of Service and Privacy
-          Policy.</p>
+        <button class="button button--github">
+          <svg width="20" height="20" viewBox="0 0 14 14" aria-label="github"><path d="M7 .175c-3.872 0-7 3.128-7 7 0 3.084 2.013 5.71 4.79 6.65.35.066.482-.153.482-.328v-1.181c-1.947.415-2.363-.941-2.363-.941-.328-.81-.787-1.028-.787-1.028-.634-.438.044-.416.044-.416.7.044 1.071.722 1.071.722.635 1.072 1.641.766 2.035.59.066-.459.24-.765.437-.94-1.553-.175-3.193-.787-3.193-3.456 0-.766.262-1.378.721-1.881-.065-.175-.306-.897.066-1.86 0 0 .59-.197 1.925.722a6.754 6.754 0 0 1 1.75-.24c.59 0 1.203.087 1.75.24 1.335-.897 1.925-.722 1.925-.722.372.963.131 1.685.066 1.86.46.48.722 1.115.722 1.88 0 2.691-1.641 3.282-3.194 3.457.24.219.481.634.481 1.29v1.926c0 .197.131.415.481.328C11.988 12.884 14 10.259 14 7.175c0-3.872-3.128-7-7-7z" fill="currentColor" fill-rule="nonzero"></path>
+          </svg>
+          Continue with GitHub
+        </button>
+        <button class="button button--gitlab">
+          <svg width="20" height="20" viewBox="-2 -2 40 40" aria-label="gitlab"><path fill="#B4A4E8" d="M2 14l9.38 9v-9l-4-12.28c-.205-.632-1.176-.632-1.38 0z"></path><path fill="#B4A4E8" d="M34 14l-9.38 9v-9l4-12.28c.205-.632 1.176-.632 1.38 0z"></path><path fill="#B4A4E8" d="M18 34.38L3 14h30z"></path><path fill="#D9CFF9" d="M18 34.38L11.38 14H2l4 11z"></path><path fill="#D9CFF9" d="M18 34.38L24.62 14H34l-4 11z"></path><path fill="#fff" d="M2 14L.1 20.16c-.18.565 0 1.2.5 1.56l17.42 12.66z"></path><path fill="#fff" d="M34 14l1.9 6.16c.18.565 0 1.2-.5 1.56L18 34.38z"></path>
+          </svg>
+          Continue with GitLab</button>
+        <button class="button button--bitbucket">
+          <svg width="20" height="20" viewBox="-2 -2 65 59"><defs><linearGradient x1="104.953%" y1="21.921%" x2="46.569%" y2="75.234%" id="bitbucket-10"><stop stop-color="currentColor" stop-opacity=".4" offset="7%"></stop><stop stop-color="currentColor" offset="100%"></stop></linearGradient></defs><path d="M59.696 18.86h-18.77l-3.15 18.39h-13L9.426 55.47a2.71 2.71 0 001.75.66h40.74a2 2 0 002-1.68l5.78-35.59z" fill="url(#bitbucket-10)" fill-rule="nonzero" transform="translate(-.026 .82)"></path><path d="M2 .82a2 2 0 00-2 2.32l8.49 51.54a2.7 2.7 0 00.91 1.61 2.71 2.71 0 001.75.66l15.76-18.88H24.7l-3.47-18.39h38.44l2.7-16.53a2 2 0 00-2-2.32L2 .82z" fill="currentColor" fill-rule="nonzero"></path>
+          </svg>
+          Continue with Bitbucket</button>
+        <p class="text--centre card__disclaimer"><small>No source code access will be granted. By authenticating, you agree to our <a href="https://vercel.com/legal/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> and <a href="https://vercel.com/legal/privacy-policy">Privacy Policy</a>.</small></p>
       </section>
       <section>
         <h3>Clone example</h3>

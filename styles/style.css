@@ -29,7 +29,11 @@
   --border-white-button: rgb(234, 234, 234);
   --border-black-button: var(--black);
   --border-header: rgb(0, 0, 0, 0.1);
-
+  --border-radius: 5px;
+  
+  /* Box shadows */
+  --shadow-large: 0 30px 60px rgba(0,0,0,0.12);
+  
   /* Gradients */
   --gradient-blue: linear-gradient(90deg, rgb(0, 124, 240), rgb(0, 223, 216));
   --gradient-purple: linear-gradient(
@@ -73,6 +77,11 @@
   -webkit-font-smoothing: antialiased;
   line-height: 1.5625em;
   letter-spacing: -0.02em;
+}
+
+::selection {
+  background-color: #79ffe1;
+  color: var(--black);
 }
 
 body {
@@ -153,6 +162,11 @@ p,
   color: var(--text-muted);
 }
 
+p > small {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
 .text--large {
   font-size: 1.25rem;
 }
@@ -180,13 +194,14 @@ button {
   --button-hover-bg: var(--white);
 
   display: block;
-  margin-top: 0.6875rem;
+  margin-top: 1.5rem;
   width: 100%;
   cursor: pointer;
-  border-radius: 5px;
-  padding: 0 1.5625rem;
+  border-radius: var(--border-radius);
+  padding: 0 1.5rem;
   height: 3.125rem;
   line-height: 2.875rem;
+  font-weight: 500;
   text-align: center;
   background-color: var(--button-bg);
   color: var(--button-color);
@@ -202,12 +217,24 @@ button {
   background-color: var(--button-hover-bg);
 }
 
+.button svg {
+  position: relative;
+  top: 3px;
+  position: inline-block;
+  margin-right: 0.5em;
+}
+
+.overlay-open .button svg {
+  z-index: -1;
+}
+
 .button--small {
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 2.375rem;
   height: 2.375rem;
   padding: 0 1.5rem;
+  margin-top: 0.6875rem;
 }
 
 .button--black {
@@ -451,7 +478,7 @@ header nav select {
   line-height: 1.25rem;
   height: 2rem;
   border: 1px solid var(--border-white-button);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   padding: 0 2.25em;
 }
 
@@ -540,7 +567,7 @@ footer .system-status {
   margin: 1.5rem auto 0;
   width: min-content;
   border: 1px solid var(--off-white);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   background: var(--white);
   font-size: 1rem;
   color: var(--black);
@@ -605,5 +632,28 @@ footer .out-links a:focus {
 footer > p {
   text-align: center;
 }
-
 /* #endregion */
+
+/* #region Cards  */
+.card {
+  margin: 0 -0.75rem;
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 1.5rem 0.75rem; 
+  box-shadow: var(--shadow-large);
+}
+
+.card__heading {
+  font-size: 1.5rem;
+  letter-spacing: -0.05em;
+  margin: 0 0 0.5em;
+  text-align: left;
+}
+
+.card__sub-heading {
+  margin-bottom: 3.5rem;
+}
+
+.card__disclaimer {
+  margin: 3rem 0 0;
+}
