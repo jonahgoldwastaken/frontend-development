@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="container">
     <h1>
       <svg height="26" viewBox="0 0 284 65" aria-labelledby="company-name">
         <path
@@ -19,12 +19,13 @@
       </svg>
       <span id="company-name">Vercel Inc.</span>
     </h1>
-    <button>Open menu</button>
+    <button data-open-menu class="open">Open menu</button>
     <nav>
       <ul>
-        <li><a href="https://vercel.com/contact">Contact</a></li>
-        <li><a href="https://vercel.com/login">Login</a></li>
-        <li><a href="https://vercel.com/signup">Sign up</a></li>
+        <li class="li--button"><a class="button button--small" href="https://vercel.com/contact">Contact</a></li>
+        <li class="li--button"><a class="button button--small" href="https://vercel.com/login">Login</a></li>
+        <li class="li--button"><a class="button button--small button--blue" href="https://vercel.com/signup">Sign
+            up</a></li>
       </ul>
       <h2>Solutions</h2>
       <ul>
@@ -54,13 +55,13 @@
         <li><a href="https://vercel.com/about">About</a></li>
         <li><a href="https://vercel.com/careers">Careers</a></li>
       </ul>
-      <label>Theme
-        <select aria-labelledby="theme-label">
-          <option value="system">System</option>
-          <option value="light">Light</option>
-          <option value="Dark">Dark</option>
-        </select>
+      <label for="theme" class="h6">Theme
       </label>
+      <select id="theme">
+        <option value="system">System</option>
+        <option value="light">Light</option>
+        <option value="Dark">Dark</option>
+      </select>
     </nav>
   </header>
 
@@ -253,6 +254,7 @@
     <a target="_blank" href="https://twitter.com/vercel">Twitter</a>
     <p><small>Copyright © 2020 Vercel Inc. All rights reserved.</small></p>
   </footer>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>

@@ -50,6 +50,9 @@
   --button-gitlab-hover: rgb(131, 103, 211);
   --button-bitbucket: rgb(0, 82, 204);
   --button-bitbucket-hover: rgb(22, 104, 226);
+
+  /* Transitions */
+  --standard-transition: all 0.2s ease;
 }
 /* #endregion */
 
@@ -58,7 +61,6 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  transition: all 0.2s ease;
 }
 
 :root {
@@ -75,6 +77,15 @@
 
 body {
   margin: 0;
+}
+
+body.overlay-open {
+  overflow: hidden;
+  width: 100%;
+}
+
+body.overlay-open .hide-on-overlay-open {
+display: none;
 }
 /* #endregion */
 
@@ -155,7 +166,7 @@ button {
   appearance: none;
   -webkit-appearance: none;
   font-size: 1rem;
-  transition: all 0.2s ease;
+  transition: var(--standard-transition);
 }
 
 .button {
@@ -180,6 +191,7 @@ button {
   border-width: 1px;
   border-color: var(--button-border);
   border-style: solid;
+  transition: var(--standard-transition);
 }
 
 .button:hover {
@@ -293,12 +305,87 @@ a:hover {
 }
 /* #endregion */
 
-/* #region Nav */
-nav {
-  padding: 1.5rem 0;
+/* #region Header */
+header {
+  position: sticky;
+  background: white;
+  top: 0;
+  height: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4rem;
+  grid-auto-rows: min-content;
+  justify-content: space-between;
+  grid-template-areas: "heading button";
+  transition: box-shadow 0.2s ease;
 }
 
-nav h2 {
+header.sticking {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 0px 0px inset;
+}
+
+header > h1 {
+  grid-area: heading;
+  align-self: center;
+  justify-self: start;
+}
+
+header > h1 #company-name {
+  display: block;
+  color: transparent;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+
+header > button {
+  position: relative;
+  grid-area: button;
+  align-self: center;
+  justify-self: end;
+  padding: 0;
+  color: transparent;
+  border: none;
+  background: none;
+  width: 2rem;
+  height: 2.5rem;
+  overflow: hidden;
+}
+
+header > button::before,
+header > button::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+  display: block;
+  height: 1px;
+  width: 1.375rem;
+  background-color: var(--black);
+  transition: transform 0.15s ease;
+}
+
+header > button::before {
+  transform: translate(-50%, -4px);
+}
+
+header > button::after {
+  transform: translate(-50%, 4px);
+}
+
+header nav {
+  display: none;
+  position: fixed;
+  top: 4rem;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow-y: scroll;
+  background: white;
+  padding: 2.5rem 1.5rem 1.5rem;
+}
+
+header nav h2 {
   font-size: 1.25rem;
   font-weight: 600;
   text-transform: unset;
@@ -307,48 +394,49 @@ nav h2 {
   margin: 1.33em 0;
 }
 
-nav ul {
+header nav ul {
   padding: 0;
   list-style-type: none;
   padding-bottom: 1.5rem;
 }
 
-nav li {
+header nav li {
   height: 3rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   border-bottom: 1px solid var(--off-white);
   cursor: pointer;
+  transition: var(--standard-transition);
 }
 
-nav li:hover {
+header nav li:hover {
   background-color: var(--near-white);
 }
 
-nav li.li--button {
+header nav li.li--button {
   cursor: initial;
   height: min-content;
   border-bottom: none;
   padding: 0.5rem 0;
 }
 
-nav li.li--button:hover {
+header nav li.li--button:hover {
   background-color: unset;
 }
 
-nav a {
+header nav a {
   color: var(--black);
   width: 100%;
   height: 100%;
   line-height: 3rem;
 }
 
-nav label {
+header nav label {
   display: block;
 }
 
-nav select {
+header nav select {
   appearance: none;
   -webkit-appearance: none;
   display: block;
@@ -362,4 +450,20 @@ nav select {
   border-radius: 5px;
   padding: 0 2.25em;
 }
-/* #endregion */
+
+header.nav-open {
+  box-shadow: none;
+}
+
+header.nav-open > nav {
+  display: block;
+}
+
+header.nav-open > button::before {
+  transform: translate(-50%, 0) rotate(45deg);
+}
+
+header.nav-open > button::after {
+  transform: translate(-50%, 0) rotate(-45deg);
+}
+/* #endregion header */

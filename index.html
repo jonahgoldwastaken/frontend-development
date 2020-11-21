@@ -10,12 +10,12 @@
 </head>
 
 <body>
+  <aside class="hide-on-overlay-open">
+    <a href="https://nextjs.org/blog/next-10">
+      Next.js 10 <span>Read →</span>
+    </a>
+  </aside>
   <header class="container">
-    <aside>
-      <a href="https://nextjs.org/blog/next-10">
-        Next.js 10 <span>Read →</span>
-      </a>
-    </aside>
     <h1>
       <svg height="26" viewBox="0 0 284 65" aria-labelledby="company-name">
         <path
@@ -24,7 +24,7 @@
       </svg>
       <span id="company-name">Vercel Inc.</span>
     </h1>
-    <button>Open menu</button>
+    <button data-open-menu class="open">Open menu</button>
     <nav>
       <ul>
         <li class="li--button"><a class="button button--small" href="https://vercel.com/contact">Contact</a></li>
