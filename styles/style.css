@@ -226,10 +226,6 @@ button {
   margin-right: 0.5em;
 }
 
-.overlay-open .button svg {
-  z-index: -1;
-}
-
 .button--small {
   font-size: 0.875rem;
   font-weight: 500;
@@ -343,6 +339,7 @@ header {
   position: sticky;
   background: white;
   top: 0;
+  z-index: 9999;
   height: 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -608,10 +605,6 @@ footer .out-links li {
   padding: 0 0 0 1rem;
 }
 
-.overlay-open .out-links li {
-  z-index: -1;
-}
-
 footer .out-links li:nth-child(odd) {
   box-shadow: -1px 0px 0px var(--off-white) inset;
   padding-right: 1rem;
@@ -679,10 +672,6 @@ footer > p {
   margin-right: 0.5rem;
 }
 
-.overlay-open .card__image-header svg {
-  z-index: -1;
-}
-
 .card__disclaimer {
   margin: 3rem 0 0;
 }
@@ -720,3 +709,146 @@ footer > p {
   list-style: none;
   padding: 0;
 }
+/* #endregion */
+
+/* #region Title */
+.title {
+  font-size: 23vw;
+  font-weight: 800;
+  text-transform: initial;
+  letter-spacing: -0.08em;
+  line-height: 1;
+}
+
+.title > span {
+  display: block;
+  position: relative;
+}
+
+.title > span > span {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+}
+
+.title > span::before {
+  content: attr(data-content);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  color: var(--black);
+  background-clip: initial;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+}
+
+.title span:first-child > span {
+  animation: title__animation--blue 8s infinite;
+  background-image: var(--gradient-blue);
+}
+
+.title span:first-child::before {
+  animation: title__animation--blue-before 8s infinite;
+}
+
+.title span:nth-child(2) > span {
+  animation: title__animation--purple 8s infinite;
+  background-image: var(--gradient-purple);
+}
+
+.title span:nth-child(2)::before {
+  animation: title__animation--purple-before 8s infinite;
+}
+
+.title span:nth-child(3) > span {
+  animation: title__animation--orange 8s infinite;
+  background-image: var(--gradient-orange);
+}
+
+.title span:nth-child(3)::before {
+  animation: title__animation--orange-before 8s infinite;
+}
+
+@keyframes title__animation--blue {
+  0%,
+  16.667%,
+  to {
+    opacity: 1;
+  }
+
+  33.333%,
+  83.333% {
+    opacity: 0;
+  }
+}
+
+@keyframes title__animation--blue-before {
+  0%,
+  16.667%,
+  to {
+    opacity: 0;
+  }
+
+  25%,
+  91.667% {
+    opacity: 1;
+  }
+}
+
+@keyframes title__animation--purple {
+  0%,
+  16.667%,
+  66.667%,
+  to {
+    opacity: 0;
+  }
+  33.333%,
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes title__animation--purple-before {
+  0%,
+  16.667%,
+  66.667%,
+  to {
+    opacity: 1;
+  }
+  33.333%,
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes title__animation--orange {
+  0%,
+  50%,
+  to {
+    opacity: 0;
+  }
+
+  66.667%,
+  83.333% {
+    opacity: 1;
+  }
+}
+
+@keyframes title__animation--orange-before {
+  0%,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  66.667%,
+  83.333% {
+    opacity: 0;
+  }
+}
+/* #endregion */
