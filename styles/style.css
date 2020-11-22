@@ -715,23 +715,19 @@ footer > p {
 
 /* #region Title */
 .title {
-  font-size: 23vw;
+  font-size: 22.5vw;
   font-weight: 800;
   text-transform: initial;
   letter-spacing: -0.08em;
   line-height: 1;
+  text-align: center;
 }
 
 .title > span {
   display: block;
+  width: 100%;
+  height: 100%;
   position: relative;
-}
-
-.title > span > span {
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: 1;
 }
 
 .title > span::before {
@@ -740,13 +736,26 @@ footer > p {
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
+  width: 100%;
   z-index: 0;
   color: var(--black);
   background-clip: initial;
   -webkit-background-clip: initial;
   -webkit-text-fill-color: initial;
+  padding-left: 0.05em;
+  padding-right: 0.05em;
+}
+
+.title > span > span {
+  position: relative;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+  padding-left: 0.05em;
+  padding-right: 0.05em;
 }
 
 .title span:first-child > span {
