@@ -10,6 +10,14 @@
 </head>
 
 <body>
+  <aside class="banner">
+    <p class="banner__text">
+      Next.js 10
+      <a target="_blank" rel="noopener noreferrer" class="banner__link" href="https://nextjs.org/blog/next-10">
+        Read →
+      </a>
+    </p>
+  </aside>
   <header class="container">
     <h1>
       <svg tabindex="-1" height="26" viewBox="0 0 284 65">
@@ -66,7 +74,7 @@
   </header>
 
   <main class="container">
-    <section>
+    <section class="section--pt">
       <h2 class="title">
         <span data-content="Develop."><span>Develop.</span></span>
         <span data-content="Preview."><span>Preview.</span></span>
@@ -93,17 +101,23 @@
             href="https://nextjs.org/showcase#travel">travel</a>, <a target="_blank"
             href="https://nextjs.org/showcase#news">news</a>, and
           <a target="_blank" href="https://nextjs.org/showcase#marketing">marketing</a>.</p>
-        <p>Vercel is the best place to deploy any frontend app. Start by deploying with zero configuration to our <a
-            class="link--develop" target="_blank" href="https://vercel.com/docs/v2/edge-network/overview">global
+        <p class="text--mb">Vercel is the best place to deploy any frontend app. Start by deploying with zero
+          configuration to our <a class="link--develop" target="_blank"
+            href="https://vercel.com/docs/v2/edge-network/overview">global
             edge network</a>. <a target="_blank" href="https://nextjs.org/docs/basic-features/data-fetching">Scale
             dynamically</a> to millions of pages without breaking a sweat.</p>
         <h5>Fast Refresh</h5>
-        <p>Reliable live-editing experience for your UI components.</p>
+        <p class="text--centre text--mb">Reliable live-editing experience for your UI components.</p>
         <h5>Flexible Data Fetching</h5>
-        <p>Connect your pages to any data source, headless CMS, or API and make it work in everyone's dev environment.
+        <p class="text--centre text--mb">Connect your pages to any data source, headless CMS, or API and make it work in
+          everyone's
+          dev environment.
         </p>
         <h5>Edge on Localhost</h5>
-        <p>From caching to Serverless Functions, all our cloud primitives work perfectly on localhost.</p>
+        <p class="text--centre">From caching to Serverless Functions, all our cloud primitives work perfectly
+          on
+          localhost.
+        </p>
       </section>
       <section>
         <h2>Works with 30+ jamstack frameworks</h2>
@@ -124,18 +138,22 @@
           <h3>2. Preview</h3>
           <h4>Accelerate with your team</h4>
         </hgroup>
-        <p>Frontend development is not meant to be a solo activity. The Vercel platform makes it a collaborative
+        <p class="text--centre">Frontend development is not meant to be a solo activity. The Vercel platform makes it a
+          collaborative
           experience with deploy previews for every code change, by seamlessly integrating with <a target="_blank"
             href="https://vercel.com/github">GitHub</a>, <a target="_blank" href="https://vercel.com/gitlab">GitLab</a>,
           and
           <a target="_blank" href="https://vercel.com/bitbucket">Bitbucket</a>.</p>
         <h5>Push to deploy</h5>
-        <p><a target="_blank" href="https://vercel.com/import">Import your repo</a> with one click, then push. Our
+        <p class="text--centre"><a target="_blank" href="https://vercel.com/import">Import your repo</a> with one click,
+          then push. Our
           built-in CI/CD system triggers for every code change.</p>
         <h5>Get your preview URL</h5>
-        <p>Every Git branch and PR receives a live, production-like URL that everyone on your team can visit.</p>
+        <p class="text--centre">Every Git branch and PR receives a live, production-like URL that everyone on your team
+          can visit.</p>
         <h5>Share and Collaborate</h5>
-        <p>Avoid surprises by iterating with your entire team. Test from the perspective of your users, on every
+        <p class="text--centre">Avoid surprises by iterating with your entire team. Test from the perspective of your
+          users, on every
           platform.</p>
       </section>
       <section id="ship">
@@ -157,12 +175,12 @@
             execution</a>.</p>
       </section>
     </article>
-    <aside>
-      <ol>
-        <li>70 cities</li>
-        <li>4.5B requests per week</li>
-        <li>9PB data served</li>
-        <li>99.99% guaranteed uptime</li>
+    <aside aria-label="Vercel stats" class="stats">
+      <ol class="stats__list">
+        <li class="stats__item"><span class="stats__item--highlight">70</span> cities</li>
+        <li class="stats__item"><span class="stats__item--highlight">4.5B</span> requests per week</li>
+        <li class="stats__item"><span class="stats__item--highlight">9PB</span> data served</li>
+        <li class="stats__item"><span class="stats__item--highlight">99.99%</span> guaranteed uptime</li>
       </ol>
     </aside>
     <section>
@@ -358,8 +376,10 @@
       </path>
     </svg>
     <small class="system-status">
-      <a href="https://vercel-status.com" target="_blank" rel="noreferrer noopener">Status: <span>All systems
-          normal.</span></a>
+      <a href="https://vercel-status.com" target="_blank" rel="noreferrer noopener">
+        Status:
+        <span class="system-status__status">All systems normal.</span>
+      </a>
     </small>
     <ul class="out-links">
       <li>
