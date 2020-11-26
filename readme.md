@@ -30,11 +30,21 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Het namaken van de website was makkelijk, maar sommige elementen als de hoofd-animatie waren erg lastig. De homepagina is nu zo goed als af, en ik kan gaan beginnen met het maken van de pricing-pagina.
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent met korte uitleg-
+![Afbeelding van landing-gedeelte homepagina](images/progress1_1.png)
+> De animatie bovenaan de pagina werkt.
+
+![Afbeelding van een lijst met linkjes die nog geen nodige styling heeft](images/progress1_2.png)
+> Sommige specifieke styling mist nog.
+
+![Afbeelding van de navigatie op de website](images/progress1_3.png)
+> De navigatie-functionaliteit werkt al.
+
+![Afbeelding van cards op de homepagina](images/progress1_4.png)
+> Cards werken al.
 
 ### Agenda voor meeting
 
