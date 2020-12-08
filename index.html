@@ -9,23 +9,9 @@
   </head>
 
   <body>
-    <aside class="banner">
-      <p class="banner__text">
-        Next.js 10
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          class="banner__link"
-          href="https://nextjs.org/blog/next-10"
-        >
-          Read →
-        </a>
-      </p>
-    </aside>
     <header class="container">
       <h1>
         <img src="/images/logo.svg" alt="Vercel Inc. logo" />
-        Vercel Inc.
       </h1>
       <button data-open-menu class="open">Open menu</button>
       <nav>
@@ -177,28 +163,97 @@
         </section>
         <section>
           <h2>Works with 30+ jamstack frameworks</h2>
-          <ul>
-            <li><a href="https://vercel.com/solutions/nextjs">Next.js</a></li>
-            <li><a href="https://vercel.com/solutions/react">React</a></li>
-            <li><a href="https://vercel.com/solutions/vue">Nuxt.js</a></li>
-            <li><a href="https://vercel.com/solutions/vue">Vue.js</a></li>
-            <li
-              ><a href="https://vercel.com/signup?next=/import/ember"
-                >Ember.js</a
-              ></li
-            >
-            <li
-              ><a href="https://vercel.com/signup?next=/import/ember"
-                >Svelte</a
-              ></li
-            >
-            <li><a href="https://vercel.com/solutions/angular">Angular</a></li>
-            <li
-              ><a href="https://vercel.com/signup?next=/import/hugo"
-                >Hugo</a
-              ></li
-            >
-            <li><a href="https://vercel.com/solutions/gatsby">Gatsby</a></li>
+          <ul class="framework-list">
+            <li>
+              <a href="https://vercel.com/solutions/nextjs">
+                <img
+                  src="/images/nextjs.svg"
+                  alt="Next.js logo"
+                  aria-hidden="true"
+                />
+                <span>Next.js</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://vercel.com/solutions/react">
+                <img
+                  src="/images/react-dark.svg"
+                  alt="React.js logo"
+                  aria-hidden="true"
+                />
+                <span>React</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://vercel.com/solutions/vue">
+                <img
+                  src="/images/nuxtjs-dark.svg"
+                  alt="Nuxt.js logo"
+                  aria-hidden="true"
+                />
+                <span>Nuxt.js</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://vercel.com/solutions/vue"
+                ><img
+                  src="/images/vue.svg"
+                  alt="Vue.js logo"
+                  aria-hidden="true"
+                />
+                <span>Vue.js</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://vercel.com/signup?next=/import/ember">
+                <img
+                  src="/images/ember.svg"
+                  alt="Ember.js logo"
+                  aria-hidden="true"
+                />
+                <span>Ember.js</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://vercel.com/signup?next=/import/svelte">
+                <img
+                  src="/images/svelte.svg"
+                  alt="Svelte logo"
+                  aria-hidden="true"
+                />
+                <span>Svelte</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://vercel.com/solutions/angular">
+                <img
+                  src="/images/angular.svg"
+                  alt="Angular logo"
+                  aria-hidden="true"
+                />
+                <span>Angular</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://vercel.com/signup?next=/import/hugo">
+                <img
+                  src="/images/hugo.svg"
+                  alt="Hugo logo"
+                  aria-hidden="true"
+                />
+                <span>Hugo</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://vercel.com/solutions/gatsby">
+                <img
+                  src="/images/gatsby-dark.svg"
+                  alt="Gatsby logo"
+                  aria-hidden="true"
+                />
+                <span>Gatsby</span>
+              </a>
+            </li>
           </ul>
         </section>
         <section id="preview">
@@ -213,8 +268,8 @@
             <a target="_blank" href="https://vercel.com/github">GitHub</a>,
             <a target="_blank" href="https://vercel.com/gitlab">GitLab</a>, and
             <a target="_blank" href="https://vercel.com/bitbucket">Bitbucket</a
-            >.</p
-          >
+            >.
+          </p>
           <h5>Push to deploy</h5>
           <p class="text--centre"
             ><a target="_blank" href="https://vercel.com/import"
@@ -396,7 +451,7 @@
                   alt="Preview Screenshot of Create React App deployment"
                 />
                 <span class="card__image-header">
-                  <img src="/images/react.svg" alt="React logo" />
+                  <img src="/images/react-coloured.svg" alt="React logo" />
                   Create React App
                 </span>
               </a>
@@ -412,7 +467,7 @@
                   alt="Preview Screenshot of Nuxt.js deployment"
                 />
                 <span class="card__image-header">
-                  <img src="/images/nuxtjs.svg" alt="Nuxt.js logo" />
+                  <img src="/images/nuxtjs-coloured.svg" alt="Nuxt.js logo" />
                   Nuxt.js
                 </span>
               </a>

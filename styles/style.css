@@ -499,7 +499,8 @@ a:hover {
 header {
   position: sticky;
   background: white;
-  top: 0px;
+  margin-top: 1px;
+  top: -1px;
   z-index: 9999;
   height: 4rem;
   display: grid;
@@ -512,6 +513,7 @@ header {
 }
 
 header.intersecting {
+  padding-top: 2px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 0px 0px inset;
 }
 
@@ -929,28 +931,48 @@ section,
 }
 /* #endregion */
 
-/* #region Banner */
-.banner {
-  background: var(--near-white);
-  border-bottom: 1px solid var(--off-white);
+/* #region Framework List */
+.framework-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -0.75rem;
+  padding: 0;
 }
 
-.banner__text {
-  margin: 0;
-  text-align: center;
-  line-height: 2.5;
+.framework-list li {
+  margin: 0.75rem 1.125rem;
+}
+
+.framework-list a {
+  position: relative;
   color: var(--black);
 }
 
-.banner__link {
-  padding-left: 1.25rem;
-  margin-left: 1.25rem;
-  border-left: 1px solid var(--off-white);
-  font-weight: 550;
-  color: var(--black);
+.framework-list a:hover span {
+  visibility: initial;
+  opacity: 1;
 }
 
-.banner:not(.intersecting) + header nav {
-  top: 4rem;
+.framework-list img {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.framework-list span {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--standard-transition);
+  background: var(--white);
+  z-index: 99;
+  padding: 0.5em 0.75em;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-medium);
 }
 /* #endregion */
