@@ -20,11 +20,13 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+De animatie is me nog niet gelukt, ik ben namelijk nog niet begonnen ermee, maar ik heb wel de CSS werkend gekregen voor de slider. Ik ben ook maar alvast begonnen met het toepassen van al bestaande styling op de pricing pagina. Dan heb ik het voornamelijk over de cards op de pagina, want veel verder dan dat ben ik tot nu toe niet gekomen.
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
+
+Ik heb eigenlijk niet heel veel kunnen doen, aangezien ik volop bezig ben geweest met mijn andere vakken. Ik zit wel erg te knoeien met de testimonial-animatie, waarbij een lijst van afbeeldingen van rechts naar links moet animeren. Ik ga kijken of ik dit met JavaScript werkend kan krijgen, waarbij de non-JS versie een net overzicht kan bieden van alle bedrijven die in de testimonial staan.
 
 ## Voortgang 1 (week 3)
 
@@ -45,20 +47,6 @@ Het namaken van de website was makkelijk, maar sommige elementen als de hoofd-an
 
 ![Afbeelding van cards op de homepagina](images/progress1_4.png)
 > Cards werken al.
-
-### Agenda voor meeting
-
--samen met je groepje opstellen-
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
-### Verslag van meeting
-
--na afloop snel uitkomsten vastleggen-
 
 ## Breakdownschets (week 1)
 
