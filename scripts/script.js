@@ -15,8 +15,21 @@ function onLoad() {
     rootMargin: "-1px 0px 0px 0px",
     threshold: [0, 1],
   });
-  observer.observe(document.querySelector("header"));
-  observer.observe(document.querySelector(".banner"));
+  
+  /**
+   * Add class to and observe all intersectable elements
+   */
+  const elements = document.querySelectorAll('[data-intersect]')
+  for (element of elements) {
+     observer.observe(element);
+  }
+  addClassToIntersectableElements(elements)
+}
+
+function addClassToIntersectableElements(elements) {
+  for (element of elements) {
+    element.classList.add('intersectable')
+  }
 }
 
 function toggleHeaderMenu() {

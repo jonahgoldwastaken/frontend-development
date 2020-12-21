@@ -9,9 +9,9 @@
   </head>
 
   <body>
-    <header class="container">
+    <header data-intersect>
       <h1>
-        <img src="/images/logo.svg" alt="Vercel Inc. logo" />
+        <img src="images/logo.svg" alt="Vercel Inc. logo" />
       </h1>
       <button data-open-menu class="open">Open menu</button>
       <nav>
@@ -71,7 +71,7 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main>
       <section class="section--pt">
         <h2 class="title">
           <span data-content="Develop.">
@@ -167,7 +167,7 @@
             <li>
               <a href="https://vercel.com/solutions/nextjs">
                 <img
-                  src="/images/nextjs.svg"
+                  src="images/nextjs.svg"
                   alt="Next.js logo"
                   aria-hidden="true"
                 />
@@ -177,7 +177,7 @@
             <li>
               <a href="https://vercel.com/solutions/react">
                 <img
-                  src="/images/react-dark.svg"
+                  src="images/react-dark.svg"
                   alt="React.js logo"
                   aria-hidden="true"
                 />
@@ -187,7 +187,7 @@
             <li>
               <a href="https://vercel.com/solutions/vue">
                 <img
-                  src="/images/nuxtjs-dark.svg"
+                  src="images/nuxtjs-dark.svg"
                   alt="Nuxt.js logo"
                   aria-hidden="true"
                 />
@@ -197,7 +197,7 @@
             <li>
               <a href="https://vercel.com/solutions/vue"
                 ><img
-                  src="/images/vue.svg"
+                  src="images/vue.svg"
                   alt="Vue.js logo"
                   aria-hidden="true"
                 />
@@ -207,7 +207,7 @@
             <li>
               <a href="https://vercel.com/signup?next=/import/ember">
                 <img
-                  src="/images/ember.svg"
+                  src="images/ember.svg"
                   alt="Ember.js logo"
                   aria-hidden="true"
                 />
@@ -217,7 +217,7 @@
             <li>
               <a href="https://vercel.com/signup?next=/import/svelte">
                 <img
-                  src="/images/svelte.svg"
+                  src="images/svelte.svg"
                   alt="Svelte logo"
                   aria-hidden="true"
                 />
@@ -227,7 +227,7 @@
             <li>
               <a href="https://vercel.com/solutions/angular">
                 <img
-                  src="/images/angular.svg"
+                  src="images/angular.svg"
                   alt="Angular logo"
                   aria-hidden="true"
                 />
@@ -237,7 +237,7 @@
             <li>
               <a href="https://vercel.com/signup?next=/import/hugo">
                 <img
-                  src="/images/hugo.svg"
+                  src="images/hugo.svg"
                   alt="Hugo logo"
                   aria-hidden="true"
                 />
@@ -247,7 +247,7 @@
             <li>
               <a href="https://vercel.com/solutions/gatsby">
                 <img
-                  src="/images/gatsby-dark.svg"
+                  src="images/gatsby-dark.svg"
                   alt="Gatsby logo"
                   aria-hidden="true"
                 />
@@ -337,68 +337,71 @@
           >
         </section>
       </article>
-      <aside aria-label="Vercel stats" class="stats">
-        <ol class="stats__list">
-          <li class="stats__item"
-            ><span class="stats__item--highlight">70</span> cities</li
-          >
-          <li class="stats__item"
-            ><span class="stats__item--highlight">4.5B</span> requests per
-            week</li
-          >
-          <li class="stats__item"
-            ><span class="stats__item--highlight">9PB</span> data served</li
-          >
-          <li class="stats__item"
-            ><span class="stats__item--highlight">99.99%</span> guaranteed
-            uptime</li
-          >
+      <aside aria-label="Vercel stats" id="stats">
+        <ol>
+          <li>
+            <span>70</span>
+            cities
+          </li>
+          <li>
+            <span>4.5B</span>
+            requests per week
+          </li>
+          <li>  
+            <span>9PB</span>
+            data served
+          </li>
+          <li>
+            <span>99.99%</span>
+            guaranteed uptime
+          </li>
         </ol>
       </aside>
       <section>
         <h2>Begin your vercel journey</h2>
         <section class="card">
-          <h3 class="card__heading">Import Existing Project</h3>
-          <p class="card__sub-heading"
-            >Already have a
+          <h3>Import Existing Project</h3>
+          <p>
+            Already have a
             <a target="_blank" href="https://nextjs.org/">Next.js</a>,
             <a target="_blank" href="https://vercel.com/solutions/gatsby"
-              >Gatsby</a
+              >
+              Gatsby
+              </a
             >,
             <a
               target="_blank"
               href="https://vercel.com/guides/deploying-nuxtjs-with-vercel"
-              >Nuxt</a
-            >, or Jamstack project?</p
-          >
+            >
+              Nuxt
+              </a>, or Jamstack project?
+            </p>
           <button class="button button--github">
-            <img src="/images/github-light.svg" alt="GitHub logo" />
+            <img src="images/github-light.svg" alt="GitHub logo" />
             Continue with GitHub
           </button>
           <button class="button button--gitlab">
-            <img src="/images/gitlab.svg" alt="GitLab logo" />
+            <img src="images/gitlab.svg" alt="GitLab logo" />
             Continue with GitLab
           </button>
           <button class="button button--bitbucket">
-            <img src="/images/bitbucket.svg" alt="BitBucket logo" />
+            <img src="images/bitbucket.svg" alt="BitBucket logo" />
             Continue with Bitbucket
           </button>
-          <p class="text--centre card__disclaimer"
-            ><small
-              >No source code access will be granted. By authenticating, you
-              agree to our
-              <a
-                href="https://vercel.com/legal/terms"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Terms of Service</a
-              >
-              and
-              <a href="https://vercel.com/legal/privacy-policy"
-                >Privacy Policy</a
-              >.</small
-            ></p
-          >
+          <small>
+            No source code access will be granted. By authenticating, you agree to our
+            <a
+              href="https://vercel.com/legal/terms"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Terms of Service
+            </a>
+            and
+            <a href="https://vercel.com/legal/privacy-policy">
+              Privacy Policy
+            </a>.
+          </small>
         </section>
         <section class="card card--inverted">
           <h3 class="card__heading">Clone example</h3>
@@ -413,12 +416,11 @@
                 href="https://vercel.com/signup?next=%2Fimport%2Fselect-scope%3Fs%3Dhttps%253A%252F%252Fgithub.com%252Fvercel%252Fvercel%252Ftree%252Fmaster%252Fexamples%252Fnextjs%26template%3Dnextjs%26id%3D67753070"
               >
                 <img
-                  class="card__image"
-                  src="/images/example_next.png"
+                  src="images/example_next.png"
                   alt="Preview Screenshot of Next.js deployment"
                 />
-                <span class="card__image-header">
-                  <img src="/images/nextjs.svg" alt="Next.js logo" />
+                <span>
+                  <img src="images/nextjs.svg" alt="Next.js logo" />
                   Next.js
                 </span>
               </a></li
@@ -430,12 +432,11 @@
                 href="https://vercel.com/signup?next=%2Fimport%2Fselect-scope%3Fs%3Dhttps%253A%252F%252Fgithub.com%252Fvercel%252Fvercel%252Ftree%252Fmaster%252Fexamples%252Fgatsby%26template%3Dgatsby%26id%3D67753070"
               >
                 <img
-                  class="card__image"
-                  src="/images/example_gatsby.png"
+                  src="images/example_gatsby.png"
                   alt="Preview Screenshot of Gatsby deployment"
                 />
-                <span class="card__image-header">
-                  <img src="/images/gatsby-coloured.svg" alt="Gatsby logo" />
+                <span>
+                  <img src="images/gatsby-coloured.svg" alt="Gatsby logo" />
                   Gatsby
                 </span>
               </a>
@@ -446,12 +447,11 @@
                 href="https://vercel.com/signup?next=%2Fimport%2Fselect-scope%3Fs%3Dhttps%253A%252F%252Fgithub.com%252Fvercel%252Fvercel%252Ftree%252Fmaster%252Fexamples%252Fcreate-react-app%26template%3Dcreate-react-app%26id%3D67753070"
               >
                 <img
-                  class="card__image"
-                  src="/images/example_cra.png"
+                  src="images/example_cra.png"
                   alt="Preview Screenshot of Create React App deployment"
                 />
-                <span class="card__image-header">
-                  <img src="/images/react-coloured.svg" alt="React logo" />
+                <span>
+                  <img src="images/react-coloured.svg" alt="React logo" />
                   Create React App
                 </span>
               </a>
@@ -462,19 +462,17 @@
                 target="_blank"
                 href="https://vercel.com/signup?next=%2Fimport%2Fselect-scope%3Fs%3Dhttps%253A%252F%252Fgithub.com%252Fvercel%252Fvercel%252Ftree%252Fmaster%252Fexamples%252Fnuxtjs%26template%3Dnuxtjs%26id%3D67753070"
                 ><img
-                  class="card__image"
-                  src="/images/example_nuxt.png"
+                  src="images/example_nuxt.png"
                   alt="Preview Screenshot of Nuxt.js deployment"
                 />
-                <span class="card__image-header">
-                  <img src="/images/nuxtjs-coloured.svg" alt="Nuxt.js logo" />
+                <span>
+                  <img src="images/nuxtjs-coloured.svg" alt="Nuxt.js logo" />
                   Nuxt.js
                 </span>
               </a>
             </li>
           </ul>
           <a
-            class="card__cta"
             target="_blank"
             href="https://vercel.com/import/templates"
             >Browse All Examples →</a
@@ -484,18 +482,18 @@
       <section class="testimonial">
         <h2>Trusted by the best frontend teams</h2>
         <ul>
-          <li><img src="/images/airbnb.svg" alt="Airbnb" /></li>
-          <li><img src="/images/auth0.svg" alt="Auth0" /></li>
-          <li><img src="/images/scale.svg" alt="Scale" /></li>
-          <li><img src="/images/twilio.svg" alt="Twilio" /></li>
+          <li><img src="images/airbnb.svg" alt="Airbnb" /></li>
+          <li><img src="images/auth0.svg" alt="Auth0" /></li>
+          <li><img src="images/scale.svg" alt="Scale" /></li>
+          <li><img src="images/twilio.svg" alt="Twilio" /></li>
           <li class="testimonial-double-width"
-            ><img src="/images/tripadvisor.svg" alt="Tripsadvisor"
+            ><img src="images/tripadvisor.svg" alt="Tripsadvisor"
           /></li>
         </ul>
       </section>
     </main>
 
-    <footer class="container">
+    <footer>
       <nav>
         <details>
           <summary aria-label="Product navigation links">Product</summary>
@@ -566,25 +564,25 @@
           </ul>
         </details>
       </nav>
-      <img src="/images/logo.svg" alt="Vercel Inc. logo" />
-      <small class="system-status">
+      <img src="images/logo.svg" alt="Vercel Inc. logo" />
+      <small id="system-status">
         <a
           href="https://vercel-status.com"
           target="_blank"
           rel="noreferrer noopener"
         >
           Status:
-          <span class="system-status__status">All systems normal.</span>
+          <span>All systems normal.</span>
         </a>
       </small>
-      <ul class="out-links">
+      <ul id="out-links">
         <li>
           <a
             aria-label="Vercel's GitHub Page"
             target="_blank"
             href="https://github.com/vercel"
           >
-            <img src="/images/github-dark.svg" alt="GitHub logo" />
+            <img src="images/github-dark.svg" alt="GitHub logo" />
           </a>
         </li>
         <li>
@@ -593,7 +591,7 @@
             aria-label="Vercel's Twitter Profile"
             href="https://twitter.com/vercel"
           >
-            <img src="/images/twitter.svg" alt="Twitter logo" />
+            <img src="images/twitter.svg" alt="Twitter logo" />
           </a>
         </li>
       </ul>
