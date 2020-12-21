@@ -20,6 +20,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
+### Stand van zaken
+
 De animatie is me nog niet gelukt, ik ben namelijk nog niet begonnen ermee, maar ik heb wel de CSS werkend gekregen voor de slider. Ik ben ook maar alvast begonnen met het toepassen van al bestaande styling op de pricing pagina. Dan heb ik het voornamelijk over de cards op de pagina, want veel verder dan dat ben ik tot nu toe niet gekomen.
 
 ## Voortgang 2 (week 5)
