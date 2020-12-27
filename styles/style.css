@@ -14,6 +14,12 @@
   --light-gray: rgb(153, 153, 153);
   --black: rgb(0, 0, 0);
   --blue: rgb(0, 112, 243);
+  --dark-purple: rgb(121, 40, 202);
+  --lighter-blue: rgb(0, 124, 240);
+  --aqua: rgb(0, 223, 216);
+  --purple: rgb(255, 0, 128);
+  --orange: rgb(255, 77, 77);
+  --yellow: rgb(249, 203, 40);
 
   /* Text colour */
   --text-muted: rgb(102, 102, 102);
@@ -87,6 +93,7 @@
 }
 
 body {
+  counter-reset: steps-section;
   margin: 0;
 }
 
@@ -503,8 +510,9 @@ header {
   background: white;
   top: 0px;
   z-index: 9999;
-  height: 4rem;
   display: grid;
+  max-height: 100vh;
+  overflow-y: scroll;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 4rem;
   grid-auto-rows: min-content;
@@ -516,6 +524,7 @@ header {
 
 header.intersectable {
   top: -1px;
+  height: 4rem;
   margin-top: 1px;
   box-shadow: initial;
 }
@@ -541,7 +550,17 @@ header > h1 span {
   overflow: hidden;
 }
 
-header > button {
+header > label {
+  color: transparent;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  grid-column: 2;
+}
+
+header > input {
+  appearance: none;
+  -webkit-appearance: none;
   position: relative;
   grid-area: button;
   align-self: center;
@@ -555,8 +574,8 @@ header > button {
   overflow: hidden;
 }
 
-header > button::before,
-header > button::after {
+header > input::before,
+header > input::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -568,31 +587,22 @@ header > button::after {
   transition: transform 0.15s ease;
 }
 
-header > button::before {
+header > input::before {
   transform: translate(-50%, -4px);
 }
 
-header > button::after {
+header > input::after {
   transform: translate(-50%, 4px);
 }
 
 header nav {
   display: none;
-  position: fixed;
-  top: 6.5rem;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  z-index: -10;
-  overflow-y: scroll;
+  grid-column: span 2;
   background: white;
-  padding: 2.5rem 1.5rem 1.5rem;
+  padding: 2.5rem 0rem 1.5rem;
 }
 
-header > button:focus + nav,
-header > button:active + nav,
-header nav:focus-inner,
-header nav:focus {
+header > input:checked + nav {
   display: block;
 }
 
@@ -665,17 +675,26 @@ header nav select {
 
 header.nav-open {
   box-shadow: none;
+  height: 100%;
 }
 
-header.nav-open > nav {
-  display: block;
+header.intersectable > nav {
+  position: fixed;
+  top: calc(4rem - 1px);
+  padding-top: 2.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow-y: scroll;
 }
 
-header.nav-open > button::before {
+header > input:checked::before {
   transform: translate(-50%, 0) rotate(45deg);
 }
 
-header.nav-open > button::after {
+header > input:checked::after {
   transform: translate(-50%, 0) rotate(-45deg);
 }
 /* #endregion */
@@ -853,7 +872,7 @@ section,
 .card h3:first-child + p,
 .card h4:first-child + p,
 .card h5:first-child + p {
-    margin-bottom: 3.5rem;
+  margin-bottom: 3.5rem;
 }
 
 .card > img:first-child {
@@ -877,11 +896,12 @@ section,
 }
 
 .card > small:last-child {
+  display: block;
   text-align: center;
   margin: 3rem 0 0;
 }
 
-.card a:last-child {
+.card > a:last-child {
   display: block;
   margin-top: 1.5rem;
 }
@@ -1037,5 +1057,114 @@ section,
   to {
     transform: translateX(-50%);
   }
+}
+/* #endregion */
+
+/* #region Step-sections */
+#develop > hgroup h3,
+#preview > hgroup h3,
+#ship > hgroup h3 {
+  margin-top: calc(6.5rem + 6.25rem);
+  position: relative;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#develop > hgroup h3:before,
+#preview > hgroup h3:before,
+#ship > hgroup h3:before {
+  counter-increment: steps-section;
+  content: counter(steps-section);
+  font-size: inherit;
+  -webkit-text-fill-color: initial;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: calc(50% - 1.25rem);
+  bottom: 4rem;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+#develop > hgroup h3:after,
+#preview > hgroup h3:after,
+#ship > hgroup h3:after {
+  content: '';
+  position: absolute;
+  left: calc(50% - 0.5px);
+  bottom: 6.5rem;
+  width: 1px;
+  height: 6.25rem;
+  background: black;
+}
+
+#develop > hgroup h3 {
+  background-image: var(--gradient-blue);
+}
+
+#develop > hgroup h3:before {
+  background-image: var(--gradient-blue);
+}
+
+#develop > hgroup h3:after {
+  background-image: linear-gradient(var(--white), var(--lighter-blue));
+}
+
+#preview > hgroup h3 {
+  background-image: var(--gradient-purple);
+}
+
+#preview > hgroup h3:before {
+  background-image: var(--gradient-purple);
+}
+
+#preview > hgroup h3:after {
+  background-image: linear-gradient(var(--white), var(--dark-purple));
+}
+
+#ship > hgroup h3 {
+  background-image: var(--gradient-orange);
+}
+
+#ship > hgroup h3:before {
+  background-image: var(--gradient-orange);
+}
+
+#ship > hgroup h3:after {
+  background-image: linear-gradient(var(--white), var(--orange));
+}
+
+#preview section {
+  position: relative;
+  margin-top: 8.25rem;
+}
+
+#preview section:first-of-type {
+  margin-top: calc(3.5rem + 8.25rem);
+}
+
+#preview section:before {
+  content: '';
+  position: absolute;
+  top: -2rem;
+  left: calc(50% - 0.375rem);
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 1.5px var(--light-gray) inset;
+}
+
+#preview section:after {
+  content: '';
+  position: absolute;
+  top: calc(-2rem - 6.25rem);
+  left: calc(50% - 0.5px);
+  width: 1px;
+  height: 6.25rem;
+  background-image: linear-gradient(var(--white), var(--light-gray));
 }
 /* #endregion */
