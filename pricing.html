@@ -5,7 +5,7 @@
     <meta name="author" content="Jonah Meijers" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pricing - Vercel</title>
-    <link href="styles/style.css" rel="stylesheet" />
+    <link href="/styles/style.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -17,19 +17,19 @@
       <input data-open-menu name="open-menu" class="open" type="checkbox" />
       <nav>
         <ul>
-          <li class="li--button">
-            <a class="button button--small" href="https://vercel.com/contact">
+          <li class="li-button">
+            <a class="button button-small" href="https://vercel.com/contact">
               Contact
             </a>
           </li>
-          <li class="li--button">
-            <a class="button button--small" href="https://vercel.com/login">
+          <li class="li-button">
+            <a class="button button-small" href="https://vercel.com/login">
               Login
             </a>
           </li>
-          <li class="li--button">
+          <li class="li-button">
             <a
-              class="button button--small button--blue"
+              class="button button-small button-blue"
               href="https://vercel.com/signup"
             >
               Sign up
@@ -73,23 +73,30 @@
       </nav>
     </header>
 
-    <main>
+    <main id="pricing">
       <section>
-        <h2>Start free. Then grow with us.</h2>
-        <p class="text--centre">
+        <h2 class="h4">Start free. Then grow with us.</h2>
+        <p class="text-centre">
           Vercel is the optimal workflow for frontend teams. All-in-one: Static
           and Jamstack deployment, Serverless Functions, and Global CDN.
         </p>
-        <ul>
-          <li>Custom Domains</li>
-          <li>Continuous Deployments</li>
-          <li>Edge Network</li>
-          <li>Websites & APIs</li>
-          <li>Serverless Functions</li>
-        </ul>
-        <p><strong>$0</strong>/mo</p>
-        <a href="https://vercel.com/signup">Get Started for Free →</a>
-        <p><small>No credit card required.</small></p>
+        <div class="card">
+          <ul>
+            <li>Custom Domains</li>
+            <li>Continuous Deployments</li>
+            <li>Edge Network</li>
+            <li>Websites & APIs</li>
+            <li>Serverless Functions</li>
+          </ul>
+          <p class="text-centre"><strong>$0</strong>/mo</p>
+          <a
+            class="button button-blue button-shadow"
+            href="https://vercel.com/signup"
+          >
+            Get Started for Free →
+          </a>
+          <p class="text-centre"><small>No credit card required.</small></p>
+        </div>
       </section>
       <aside class="testimonial">
         <h2>Trusted by</h2>
@@ -106,21 +113,27 @@
       <article>
         <h2>Pay as you grow</h2>
         <p>Flexible monthly pricing for projects and teams of all sizes.</p>
-        <section class="card card--inverted">
+        <section class="card card-inverted">
           <h3>For you</h3>
           <a href="https://vercel.com/signup">
             <h4>Hobby</h4>
-            <p>Free, forever</p>
+            <h5>Free, forever</h5>
           </a>
-          <hr />
-          <p>Deploy from</p>
-          <ul>
-            <li>Github personal accounts</li>
-            <li>GitLab personal accounts</li>
-            <li>Bitbucket personal accounts</li>
-            <li>Command-Line Interface</li>
-          </ul>
-          <a href="https://vercel.com/signup">Deploy for Free →</a>
+          <div>
+            <p>Deploy from</p>
+            <ul>
+              <li>Github personal accounts</li>
+              <li>GitLab personal accounts</li>
+              <li>Bitbucket personal accounts</li>
+              <li>Command-Line Interface</li>
+            </ul>
+          </div>
+          <a
+            class="button button-black button-shadow"
+            href="https://vercel.com/signup"
+          >
+            Deploy for Free →
+          </a>
         </section>
         <section class="card">
           <h3>For your team</h3>
@@ -128,25 +141,29 @@
             <h4>Pro</h4>
             <h5>$20/mo per member</h5>
           </a>
-          <hr />
-          <p>Deploy from</p>
-          <ul>
-            <li>GitHub Organizations</li>
-            <li>GitLab Groups</li>
-            <li>Bitbucket Teams</li>
-            <li>Command-Line Interface</li>
-          </ul>
-          <p>Optional features</p>
-          <ul>
-            <li>Multiple Concurrent Builds</li>
-            <li>Preview Deployment Suffix</li>
-            <li>Email Domain Login</li>
-            <li>Advanced Invoice Settings</li>
-            <li>...and much more</li>
-          </ul>
-          <a href="https://vercel.com/signup?next=/teams/create"
-            >Start 14 Day Pro Trial →</a
+          <div>
+            <p>Deploy from</p>
+            <ul>
+              <li>GitHub Organizations</li>
+              <li>GitLab Groups</li>
+              <li>Bitbucket Teams</li>
+              <li>Command-Line Interface</li>
+            </ul>
+            <p>Optional features</p>
+            <ul>
+              <li>Multiple Concurrent Builds</li>
+              <li>Preview Deployment Suffix</li>
+              <li>Email Domain Login</li>
+              <li>Advanced Invoice Settings</li>
+              <li>...and much more</li>
+            </ul>
+          </div>
+          <a
+            class="button button-blue button-shadow"
+            href="https://vercel.com/signup?next=/teams/create"
           >
+            Start 14 Day Pro Trial →
+          </a>
         </section>
         <section class="card">
           <h3>For your team</h3>
@@ -154,75 +171,104 @@
             <h4>Enterprise</h4>
             <h5>Suited to your needs</h5>
           </a>
-          <hr />
-          <p>Deploy from</p>
-          <ul>
-            <li>GitHub Organizations</li>
-            <li>GitLab Groups</li>
-            <li>BitBucket Teams</li>
-            <li>Command-Line Interface</li>
-          </ul>
-          <p>Optional features</p>
-          <ul>
-            <li>SLA for 99.99%</li>
-            <li>Multi-Region Serverless Functions</li>
-            <li>Enterprise Support</li>
-            <li>Next.js Application Audit</li>
-            <li>Training and Consulting</li>
-            <li>...and much more</li>
-          </ul>
-          <a href="https://vercel.com/contact/sales"
-            >Contact Enterprise Sales</a
+          <div>
+            <p>Deploy from</p>
+            <ul>
+              <li>GitHub Organizations</li>
+              <li>GitLab Groups</li>
+              <li>BitBucket Teams</li>
+              <li>Command-Line Interface</li>
+            </ul>
+            <p>Optional features</p>
+            <ul>
+              <li>SLA for 99.99%</li>
+              <li>Multi-Region Serverless Functions</li>
+              <li>Enterprise Support</li>
+              <li>Next.js Application Audit</li>
+              <li>Training and Consulting</li>
+              <li>...and much more</li>
+            </ul>
+          </div>
+          <a
+            class="button button-purple button-shadow"
+            href="https://vercel.com/contact/sales"
           >
+            Contact Enterprise Sales
+          </a>
         </section>
-        <p
-          >Each plan is subject to our
-          <a href="https://vercel.com/docs/platform/fair-use-policy"
-            >fair use policy</a
-          >
+        <p>
+          Each plan is subject to our
+          <a href="https://vercel.com/docs/platform/fair-use-policy">
+            fair use policy
+          </a>
           and its respective
           <a href="https://vercel.com/docs/platform/limits">platform limits</a>.
-          Hobby plans are limited to personal, non-commercial use.</p
-        >
-        <section class="card card--inverted">
+          Hobby plans are limited to personal, non-commercial use.
+        </p>
+        <section class="card card-inverted">
           <h3>For Open Source Projects</h3>
-          <p
-            >Submit an open source project for free or discounted resources from
-            Vercel.</p
-          >
-          <ul>
-            <li><a href="https://doc.deno.land/">Deno</a></li>
-            <li><a href="https://badgen.net/">Badgen</a></li>
-            <li><a href="https://vuetifyjs.com/en">Vuetify</a></li>
-          </ul>
-          <a href="https://vercel.com/contact/sales">Contact Us →</a>
-        </section>
-        <section class="card card--inverted">
-          <h3>For Partners</h3>
-          <p
-            >Apply to become an approved agency, technology partner, or
-            professional services partner.</p
-          >
+          <p>
+            Submit an open source project for free or discounted resources from
+            Vercel.
+          </p>
           <ul>
             <li>
-              <a href="https://vercel.com/partners/basement">
-                basement.studio
+              <a href="https://doc.deno.land/">
+                <img src="" alt="Deno" />
               </a>
             </li>
             <li>
-              <a href="https://vercel.com/partners/dawn-labs">Dawn Labs</a>
+              <a href="https://badgen.net/"><img src="" alt="Badgen" /></a>
             </li>
-            <li><a href="https://vercel.com/partners/few">Few</a></li>
+            <li>
+              <a href="https://vuetifyjs.com/en">
+                <img src="" alt="Vuetify" />
+              </a>
+            </li>
           </ul>
-          <a href="partnership@vercel.com">Become a Partner →</a>
+          <a
+            class="button button-shadow"
+            href="https://vercel.com/contact/sales"
+          >
+            Contact Us →
+          </a>
+        </section>
+        <section class="card card-inverted">
+          <h3>For Partners</h3>
+          <p>
+            Apply to become an approved agency, technology partner, or
+            professional services partner.
+          </p>
+          <ul>
+            <li>
+              <a href="https://vercel.com/partners/basement">
+                <img src="" alt="basement.studio" />
+              </a>
+            </li>
+            <li>
+              <a href="https://vercel.com/partners/dawn-labs"
+                ><img src="" alt="Dawn Labs"
+              /></a>
+            </li>
+            <li>
+              <a href="https://vercel.com/partners/few">
+                <img src="" alt="Few" />
+              </a>
+            </li>
+          </ul>
+          <a class="button button-shadow" href="partnership@vercel.com"
+            >Become a Partner →</a
+          >
         </section>
       </article>
-      <aside>
+      <aside class="section section-pt">
         <h2 class="title">Develop. Preview. Ship.</h2>
-        <p>The development platform for the best frontend teams.</p>
-        <a class="button button--blue" href="https://vercel.com/signup"
-          >Start Deploying</a
-        >
+        <p class="text-centre">
+          The development platform for the best frontend teams.
+        </p>
+        <a class="button button-blue" href="https://vercel.com/signup">
+          Start Deploying
+        </a>
         <a class="button" href="https://vercel.com/contact">Get a Demo</a>
       </aside>
     </main>
@@ -235,18 +281,16 @@
             <li><a href="https://vercel.com/solutions/nextjs">Next.js</a></li>
             <li><a href="https://vercel.com/github">Vercel for GitHub</a></li>
             <li><a href="https://vercel.com/gitlab">Vercel for GitLab</a></li>
-            <li
-              ><a href="https://vercel.com/bitbucket"
-                >Vercel for Bitbucket</a
-              ></li
-            >
+            <li>
+              <a href="https://vercel.com/bitbucket">Vercel for Bitbucket</a>
+            </li>
             <li><a href="https://vercel.com/integrations">Integrations</a></li>
             <li><a href="https://vercel.com/download">Command-Line</a></li>
-            <li
-              ><a href="https://vercel.com/docs/v2/edge-network/overview"
-                >Edge Network</a
-              ></li
-            >
+            <li>
+              <a href="https://vercel.com/docs/v2/edge-network/overview">
+                Edge Network
+              </a>
+            </li>
           </ul>
         </details>
         <details>
@@ -275,24 +319,24 @@
         <details>
           <summary aria-label="Legal navigation links">Legal</summary>
           <ul>
-            <li
-              ><a href="https://vercel.com/legal/privacy-policy"
-                >Privacy Policy</a
-              ></li
-            >
-            <li
-              ><a href="https://vercel.com/legal/terms">Terms of Service</a></li
-            >
-            <li
-              ><a href="https://vercel.com/legal/trademark-policy"
-                >Trademark Policy</a
-              ></li
-            >
-            <li
-              ><a href="https://vercel.com/legal/inactivity-policy"
-                >Inactivity Policy</a
-              ></li
-            >
+            <li>
+              <a href="https://vercel.com/legal/privacy-policy">
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="https://vercel.com/legal/terms">Terms of Service</a>
+            </li>
+            <li>
+              <a href="https://vercel.com/legal/trademark-policy">
+                Trademark Policy
+              </a>
+            </li>
+            <li>
+              <a href="https://vercel.com/legal/inactivity-policy">
+                Inactivity Policy
+              </a>
+            </li>
             <li><a href="https://vercel.com/legal/dpa">DPA</a></li>
             <li><a href="https://vercel.com/legal/sla">SLA</a></li>
           </ul>

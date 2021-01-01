@@ -83,7 +83,6 @@
   font-feature-settings: 'case' 1, 'rlig' 1, 'calt' 0;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.5625em;
   letter-spacing: -0.02em;
 }
 
@@ -143,12 +142,14 @@ h3,
 .h3 {
   font-size: 2rem;
   letter-spacing: -0.05em;
+  text-transform: initial;
 }
 
 h4,
 .h4 {
   font-size: 2.5rem;
   letter-spacing: -0.05em;
+  text-transform: initial;
 }
 
 h5,
@@ -216,33 +217,33 @@ h6,
 }
 
 .title span:first-child > span {
-  animation: title__animation--blue 8s infinite;
+  animation: title-animation-blue 8s infinite;
   background-image: var(--gradient-blue);
 }
 
 .title span:first-child::before {
-  animation: title__animation--blue-before 8s infinite;
+  animation: title-animation-blue-before 8s infinite;
 }
 
 .title span:nth-child(2) > span {
-  animation: title__animation--purple 8s infinite;
+  animation: title-animation-purple 8s infinite;
   background-image: var(--gradient-purple);
 }
 
 .title span:nth-child(2)::before {
-  animation: title__animation--purple-before 8s infinite;
+  animation: title-animation-purple-before 8s infinite;
 }
 
 .title span:nth-child(3) > span {
-  animation: title__animation--orange 8s infinite;
+  animation: title-animation-orange 8s infinite;
   background-image: var(--gradient-orange);
 }
 
 .title span:nth-child(3)::before {
-  animation: title__animation--orange-before 8s infinite;
+  animation: title-animation-orange-before 8s infinite;
 }
 
-@keyframes title__animation--blue {
+@keyframes title-animation-blue {
   0%,
   16.667%,
   to {
@@ -255,7 +256,7 @@ h6,
   }
 }
 
-@keyframes title__animation--blue-before {
+@keyframes title-animation-blue-before {
   0%,
   16.667%,
   to {
@@ -268,7 +269,7 @@ h6,
   }
 }
 
-@keyframes title__animation--purple {
+@keyframes title-animation-purple {
   0%,
   16.667%,
   66.667%,
@@ -281,7 +282,7 @@ h6,
   }
 }
 
-@keyframes title__animation--purple-before {
+@keyframes title-animation-purple-before {
   0%,
   16.667%,
   66.667%,
@@ -294,7 +295,7 @@ h6,
   }
 }
 
-@keyframes title__animation--orange {
+@keyframes title-animation-orange {
   0%,
   50%,
   to {
@@ -307,7 +308,7 @@ h6,
   }
 }
 
-@keyframes title__animation--orange-before {
+@keyframes title-animation-orange-before {
   0%,
   50%,
   to {
@@ -325,6 +326,7 @@ h6,
 p,
 .text {
   color: var(--text-muted);
+  line-height: 1.5625em;
 }
 
 p > small {
@@ -332,18 +334,18 @@ p > small {
   line-height: 1.6;
 }
 
-.text--mb {
+.text-mb {
   margin-bottom: 4rem;
 }
 
-.text--large {
+.text-large {
   margin: 4rem 0 0;
   font-size: 1.25rem;
   line-height: 1.6em;
   letter-spacing: -0.02em;
 }
 
-.text--centre {
+.text-centre {
   text-align: center;
 }
 /* #endregion */
@@ -389,6 +391,18 @@ button {
   background-color: var(--button-hover-bg);
 }
 
+.button-shadow {
+  box-shadow: var(--shadow-medium);
+  border: none;
+}
+
+.button-shadow:hover {
+  box-shadow: var(--shadow-smallest);
+  background: var(--button-bg);
+  color: var(--button-color);
+  border: none;
+}
+
 .button img {
   position: relative;
   top: 3px;
@@ -396,7 +410,7 @@ button {
   margin-right: 0.5em;
 }
 
-.button--small {
+.button-small {
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 2.375rem;
@@ -405,7 +419,7 @@ button {
   margin-top: 0.6875rem;
 }
 
-.button--black {
+.button-black {
   --button-color: var(--white);
   --button-border: var(--black);
   --button-bg: var(--black);
@@ -414,16 +428,25 @@ button {
   --button-hover-bg: transparent;
 }
 
-.button--blue {
+.button-blue {
   --button-color: var(--white);
   --button-border: var(--blue);
   --button-bg: var(--blue);
   --button-hover-color: var(--blue);
   --button-hover-border: var(--blue);
+  --button-hover-bg: transparent;
+}
+
+.button-purple {
+  --button-color: var(--white);
+  --button-border: var(--purple);
+  --button-bg: var(--purple);
+  --button-hover-color: var(--purple);
+  --button-hover-border: var(--purple);
   --button-hover-bg: var(--white);
 }
 
-.button--github {
+.button-github {
   --button-color: var(--white);
   --button-border: var(--button-github);
   --button-bg: var(--button-github);
@@ -432,7 +455,7 @@ button {
   --button-hover-bg: var(--button-github-hover);
 }
 
-.button--gitlab {
+.button-gitlab {
   --button-color: var(--white);
   --button-border: var(--button-gitlab);
   --button-bg: var(--button-gitlab);
@@ -441,7 +464,7 @@ button {
   --button-hover-bg: var(--button-gitlab-hover);
 }
 
-.button--bitbucket {
+.button-bitbucket {
   --button-color: var(--white);
   --button-border: var(--button-bitbucket);
   --button-bg: var(--button-bitbucket);
@@ -450,7 +473,7 @@ button {
   --button-hover-bg: var(--button-bitbucket-hover);
 }
 
-.button--pro {
+.button-pro {
   --button-color: var(--white);
   --button-border: var(--pro-color);
   --button-bg: var(--pro-color);
@@ -459,7 +482,7 @@ button {
   --button-hover-bg: var(--pro-color);
 }
 
-.button--enterprise {
+.button-enterprise {
   --button-color: var(--white);
   --button-border: var(--enterprise-color);
   --button-bg: var(--enterprise-color);
@@ -469,11 +492,11 @@ button {
 }
 
 /* Shadows from vercel.com */
-.button--shadow {
+.button-shadow {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px 0px;
 }
 
-.button--shadow:hover {
+.button-shadow:hover {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 30px 0px;
   transform: translate3d(0px, -1px, 0px);
 }
@@ -636,14 +659,14 @@ header nav li:focus {
   background-color: var(--near-white);
 }
 
-header nav li.li--button {
+header nav li.li-button {
   cursor: initial;
   height: min-content;
   border-bottom: none;
   padding: 0.5rem 0;
 }
 
-header nav li.li--button:hover {
+header nav li.li-button:hover {
   background-color: unset;
 }
 
@@ -841,6 +864,10 @@ main > section {
   padding-bottom: 3.5rem;
 }
 
+.section-pt {
+  padding-top: 3.5rem;
+}
+
 /* #endregion */
 
 /* #region Cards  */
@@ -869,6 +896,10 @@ main > section {
 .card h4:first-child + p,
 .card h5:first-child + p {
   margin-bottom: 3.5rem;
+}
+
+.card > p:last-child {
+  margin-bottom: 0;
 }
 
 .card > img:first-child {
@@ -902,13 +933,13 @@ main > section {
   margin-top: 1.5rem;
 }
 
-.card--inverted {
+.card-inverted {
   background: none;
   box-shadow: none;
   border: 1px solid var(--off-white);
 }
 
-.card--small {
+.card-small {
   display: block;
   margin: 0;
   padding: 0;
@@ -918,7 +949,7 @@ main > section {
   color: var(--black);
 }
 
-.card--small:hover {
+.card-small:hover {
   box-shadow: var(--shadow-medium);
 }
 
@@ -1045,22 +1076,20 @@ main > section {
   width: 50%;
   margin-left: 25%;
 }
-
-@keyframes testomnial-slide {
-  from {
-    transform: translateX(50%);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
 /* #endregion */
 
 /* #region Step-sections */
+#develop > hgroup h4,
+#preview > hgroup h4,
+#ship > hgroup h4 {
+  margin-top: 1.5rem;
+}
+
 #develop > hgroup h3,
 #preview > hgroup h3,
 #ship > hgroup h3 {
   margin-top: calc(6.5rem + 6.25rem);
+  margin-bottom: 0;
   position: relative;
   background-clip: text;
   -webkit-background-clip: text;
@@ -1158,5 +1187,163 @@ main > section {
   width: 1px;
   height: 6.25rem;
   background-image: linear-gradient(var(--white), var(--light-gray));
+}
+/* #endregion */
+
+/* #region pricing */
+#pricing > section:first-child .card ul {
+  background: var(--near-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin: -1.5rem -0.75rem;
+  padding: 1.5rem 0 0;
+}
+
+#pricing > section:first-child .card ul li {
+  display: flex;
+  align-items: center;
+  background: var(--off-white);
+  font-weight: 500;
+  font-size: 1.125rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+#pricing > section:first-child .card ul li:before {
+  content: 'c';
+  background: var(--blue);
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  line-height: 1.4rem;
+  text-align: center;
+  color: white;
+  margin-right: 0.5rem;
+}
+
+#pricing > section:first-child .card p:first-of-type {
+  font-size: 3rem;
+  color: var(--black);
+  margin: 3rem 0 1rem;
+}
+
+#pricing article > section {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+#pricing article > section h3 {
+  font-size: 2rem;
+}
+
+#pricing article > section h3 + a {
+  display: block;
+  background: var(--pricing-colour);
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+
+#pricing article > section h3 + a * {
+  text-align: left;
+  font-weight: 600;
+  margin: 0;
+}
+
+#pricing article > section h3 + a h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#pricing article > section h3 + a h5 {
+  font-size: 1.5rem;
+}
+
+#pricing article > section:first-of-type h3 + a {
+  --pricing-colour: var(--black);
+  color: white;
+}
+
+#pricing article > section:nth-of-type(2) h3 + a {
+  --pricing-colour: var(--blue);
+  color: white;
+}
+
+#pricing article > section:nth-of-type(3) h3 + a {
+  --pricing-colour: var(--purple);
+  color: white;
+}
+
+#pricing article > section div {
+  margin: 1.5rem -1.5rem 0;
+  padding: 0 1.5rem;
+  border-top: 1px solid var(--off-white);
+  border-bottom: 1px solid var(--off-white);
+  background: var(--near-white);
+}
+
+#pricing article > section div p {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+#pricing article > section div ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#pricing article > section div ul + p {
+  margin-top: 3rem;
+}
+
+#pricing article > section div li {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
+#pricing article > section div ul:not(:first-of-type) li:before {
+  content: '- ';
+}
+
+#pricing article > section:nth-of-type(4) ul,
+#pricing article > section:nth-of-type(5) ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#pricing article > section:nth-of-type(4) img,
+#pricing article > section:nth-of-type(5) img {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+#pricing > :last-child {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background: var(--black);
+}
+
+#pricing > :last-child .title,
+#pricing > :last-child p {
+  color: var(--white);
+}
+
+#pricing > :last-child .title {
+  font-size: 18vw;
+  margin-bottom: 1rem;
+}
+
+#pricing > :last-child p {
+  margin-bottom: 2rem;
 }
 /* #endregion */
