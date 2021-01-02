@@ -881,6 +881,10 @@ main > section {
   transition: box-shadow 0.2s ease;
 }
 
+.card-nomargin {
+  margin-bottom: 0px;
+}
+
 .card h2:first-child,
 .card h3:first-child,
 .card h4:first-child,
@@ -1047,6 +1051,10 @@ main > section {
 /* #endregion */
 
 /* #region Testimonial */
+.testimonial h2 {
+  margin-top: 0rem;
+}
+
 .testimonial ul {
   display: grid;
   grid-gap: 1em;
