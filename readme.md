@@ -6,17 +6,44 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Bronnenlijst
 
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. [https://vercel.com](https://vercel.com)
+2. [CSS Variables met URLS](https://stackoverflow.com/questions/42330075/is-there-a-way-to-interpolate-css-variables-with-url)
+3. [CSS Tricks content artikel](https://css-tricks.com/almanac/properties/c/content/)
+4. [MDN attr() artikel](https://developer.mozilla.org/en-US/docs/Web/CSS/attr())
+5. [Stackoverflow select problem with css](https://stackoverflow.com/questions/3532649/problem-with-select-and-after-with-css-in-webkit)
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+### Wat er goed ging
+
+Het namaken van de layout en het overzetten van de content. De website is vrij simpel, niet al te ingewikkeld, maar heeft met een paar micro-interacties wel wat uitdagingen in zich gehad. Verder ging dit goed:
+
+- Het maken van de kleine symbooltjes op de homepagina tussen paragrafen in.
+- Het maken van de chat interface.
+- Het maken van headers voor de verschillende secties op de homepagina.
+- Het omschrijven van de navigatieknop naar een mechanisme op basis van een checkbox.
+- Het maken van de title animatie.
+- Het toevoegen van hover en focus states voor accessibility.
+
+### Wat er moeizaam ging
+
+Het maken van de testimonial slider. Ik kon het niet zo voor elkaar krijgen dat het bruikbaar was voor screenreaders, dus heb ik het gelaten voor wat het is. Accessibility boven coole dingen.
+
+Verder heb ik ook niet de "development" sectie animatie verwerkt in mijn versie, omdat dat vrijwel onmogelijk werkend te krijgen is met vanilla javascript en heel weinig tijd. Het voegt daarnaast ook niet heel veel toe naar mijn mening.
+
+De draaiende wereldbol heb ik ook niet nagemaakt, aangezien dat met een javascript library gemaakt is en dat niet iets is waar ik me met dit vak bezig wilde houden.
+
+Verder heb ik geen night mode toegevoegd. Dit had ook te maken met een tekort aan tijd. Ik was wel al begonnen maar heb het ongedaan gemaakt en niet gecommit. Je kan het in de geschiedenis dus niet terugvinden.
+
+Al met al was dit een zeer vermakelijke en niet zo stressvolle uitdaging. Op naar de volgende!
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+![Home-pagina afgerond](images/home_page_finished.png)
+> Home-pagina afgerond
+
+![Pricing-pagina afgerond](images/pricing_page_finished.png)
+> Pricing-pagina afgerond
 
 ## Voortgang 3 (week 6)
 
