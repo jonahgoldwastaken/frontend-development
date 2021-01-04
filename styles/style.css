@@ -1,7 +1,7 @@
 /* #region Fonts */
 @font-face {
   font-family: 'Inter';
-  src: url('/fonts/inter-variable.ttf') format('truetype-variations');
+  src: url('fonts/inter-variable.ttf') format('truetype-variations');
 }
 /* #endregion */
 
@@ -707,7 +707,7 @@ header nav select {
 }
 
 header nav div {
-  --image: url('/images/pc.svg');
+  --image: url('images/pc.svg');
   position: relative;
 }
 
@@ -1334,7 +1334,7 @@ main > section {
 }
 
 #pricing > section:first-child .card ul li:before {
-  content: url(/images/pricing-check.svg);
+  content: url(images/pricing-check.svg);
   background: var(--blue);
   display: block;
   width: 1.5rem;
@@ -1483,7 +1483,7 @@ main > section {
   > section:nth-of-type(3)
   ul:first-of-type
   li:first-child:before {
-  content: url(/images/github-dark.svg);
+  content: url(images/github-dark.svg);
 }
 
 #pricing
@@ -1501,7 +1501,7 @@ main > section {
   > section:nth-of-type(3)
   ul:first-of-type
   li:nth-child(2):before {
-  content: url(/images/gitlab-coloured.svg);
+  content: url(images/gitlab-coloured.svg);
 }
 
 #pricing
@@ -1519,7 +1519,7 @@ main > section {
   > section:nth-of-type(3)
   ul:first-of-type
   li:nth-child(3):before {
-  content: url(/images/bitbucket-coloured.svg);
+  content: url(images/bitbucket-coloured.svg);
 }
 
 #pricing
@@ -1537,7 +1537,7 @@ main > section {
   > section:nth-of-type(3)
   ul:first-of-type
   li:nth-child(4):before {
-  content: url(/images/cli.svg);
+  content: url(images/cli.svg);
 }
 
 #pricing article > section ul:not(:first-of-type) li:before {
