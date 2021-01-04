@@ -11,10 +11,10 @@
   <body>
     <header data-intersect>
       <h1>
-        <img src="/images/logo.svg" alt="Vercel Inc. logo" />
+        <img src="images/logo.svg" alt="Vercel Inc. logo" />
       </h1>
       <label for="open-menu">Open Menu</label>
-      <input data-open-menu name="open-menu" class="open" type="checkbox" />
+      <input data-open-menu id="open-menu" class="open" type="checkbox" />
       <nav>
         <ul>
           <li class="li-button">
@@ -64,12 +64,14 @@
           <li><a href="https://vercel.com/about">About</a></li>
           <li><a href="https://vercel.com/careers">Careers</a></li>
         </ul>
-        <label for="theme" class="h6">Theme </label>
-        <select id="theme">
-          <option value="system">System</option>
-          <option value="light">Light</option>
-          <option value="Dark">Dark</option>
-        </select>
+        <label for="theme" class="h6">Theme</label>
+        <div>
+          <select id="theme">
+            <option value="system">System</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+        </div>
       </nav>
     </header>
 

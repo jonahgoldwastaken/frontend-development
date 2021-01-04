@@ -8,6 +8,8 @@ function onLoad() {
     .querySelector('[data-open-menu]')
     .addEventListener('click', toggleHeaderMenu)
 
+  document.querySelector('#theme').addEventListener('change', changeThemeIcon)
+
   /**
    * Create intersection observer
    */
@@ -44,4 +46,20 @@ function intersectionHandler(entries) {
       entry.intersectionRatio > 0 && entry.intersectionRatio < 1
     )
   })
+}
+
+function changeThemeIcon() {
+  const div = this.parentElement
+
+  switch (this.value) {
+    case 'system':
+      div.style.setProperty('--image', 'url(/images/pc.svg)')
+      break
+    case 'light':
+      div.style.setProperty('--image', 'url(/images/sun.svg)')
+      break
+    case 'dark':
+      div.style.setProperty('--image', 'url(/images/moon.svg)')
+      break
+  }
 }

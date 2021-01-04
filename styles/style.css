@@ -706,6 +706,21 @@ header nav select {
   padding: 0 2.25em;
 }
 
+header nav div {
+  --image: url('/images/pc.svg');
+  position: relative;
+}
+
+header nav div:before {
+  content: var(--image);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.625rem;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
 header.nav-open {
   box-shadow: none;
   height: 100%;
