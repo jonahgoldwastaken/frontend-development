@@ -53,13 +53,13 @@ function changeThemeIcon() {
 
   switch (this.value) {
     case 'system':
-      div.style.setProperty('--image', 'url(images/pc.svg)')
+      div.style.setProperty('--image', 'url(/images/pc.svg)')
       break
     case 'light':
-      div.style.setProperty('--image', 'url(images/sun.svg)')
+      div.style.setProperty('--image', 'url(/images/sun.svg)')
       break
     case 'dark':
-      div.style.setProperty('--image', 'url(images/moon.svg)')
+      div.style.setProperty('--image', 'url(/images/moon.svg)')
       break
   }
 }
