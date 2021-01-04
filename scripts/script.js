@@ -28,17 +28,26 @@ function onLoad() {
   addClassToIntersectableElements(elements)
 }
 
+/**
+ * Adds class to all elements that are used by intersection observer.
+ */
 function addClassToIntersectableElements(elements) {
   for (const element of elements) {
     element.classList.add('intersectable')
   }
 }
 
+/**
+ * Toggles classes for the navigation menu
+ */
 function toggleHeaderMenu() {
   document.querySelector('header').classList.toggle('nav-open')
   document.body.classList.toggle('overlay-open')
 }
 
+/**
+ * Changes class of element based on if they're intersecting or not
+ */
 function intersectionHandler(entries) {
   entries.forEach(entry => {
     entry.target.classList.toggle(
@@ -48,6 +57,9 @@ function intersectionHandler(entries) {
   })
 }
 
+/**
+ * Changes icon in change theme.
+ */
 function changeThemeIcon() {
   const div = this.parentElement
 
